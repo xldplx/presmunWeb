@@ -46,11 +46,11 @@ export default function Home() {
                 <img 
                   src="./alden.jpg" 
                   alt="PresMUN Event" 
-                  className="w-full h-[600px] object-cover relative"
+                  className="w-full h-[500px] object-cover relative"
                 />
               </div>
               <div className="space-y-8 flex flex-col justify-center">
-                <h2 className="font-horizon text-6xl leading-tight">
+                <h2 className="font-horizon text-4xl md:text-6xl leading-tight">
                   <span className="text-[#f3c623]">About</span>
                   <br />
                   <span className="text-white">PresMUN</span>
@@ -76,7 +76,7 @@ export default function Home() {
         {/* Councils Section */}
         <section className="py-32 px-4 md:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-horizon text-7xl mb-20 text-center">
+            <h2 className="font-horizon text-5xl md:text-6xl mb-20 text-center">
               <span className="text-white">Our</span>
               <br />
               <span className="text-[#f3c623]">Councils</span>
@@ -106,7 +106,7 @@ export default function Home() {
         <section className="py-32 px-4 md:px-8 relative overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="mb-32">
-              <h2 className="font-horizon text-7xl text-center mb-16">
+              <h2 className="font-horizon text-4xl md:text-6xl text-center mb-16">
                 <span className="text-[#f3c623]">Sponsored</span>
                 <br />
                 <span className="text-white">By</span>
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="font-horizon text-7xl text-center mb-16">
+              <h2 className="font-horizon text-4xl md:text-6xl text-center mb-16">
                 <span className="text-white">Media</span>
                 <br />
                 <span className="text-[#f3c623]">Partners</span>
@@ -150,7 +150,7 @@ export default function Home() {
         {/* Testimonials */}
         <section className="py-32 px-4 md:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-horizon text-7xl text-center mb-20">
+            <h2 className="font-horizon text-5xl md:text-6xl text-center mb-20">
               <span className="text-[#f3c623]">What People</span>
               <br />
               <span className="text-white">Say</span>
@@ -182,7 +182,7 @@ export default function Home() {
         {/* Contact Section */}
         <section className="py-32 px-4 md:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-horizon text-7xl text-center mb-16">
+            <h2 className="font-horizon text-5xl md:text-6xl text-center mb-16">
               <span className="text-white">Get in</span>
               <br />
               <span className="text-[#f3c623]">Touch</span>

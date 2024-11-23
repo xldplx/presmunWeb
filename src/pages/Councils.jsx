@@ -21,7 +21,7 @@ export default function Councils() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-24 relative">
-            <h1 className="font-horizon text-7xl text-center">
+            <h1 className="font-horizon text-5xl md:text-6xl text-center">
               <span className="text-[#f3c623]">Our</span>
               <br />
               <span className="text-white">Councils</span>

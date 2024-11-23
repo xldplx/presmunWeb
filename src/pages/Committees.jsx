@@ -53,7 +53,7 @@ export default function Committees() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-24 relative">
-            <h1 className="font-horizon text-7xl text-center">
+            <h1 className="font-horizon text-4xl md:text-6xl text-center">
               <span className="text-white">Committee</span>
               <br />
               <span className="text-[#f3c623]">Structure</span>
