@@ -42,7 +42,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="block text-white mt-4"
           >
-            2024
+            2025
           </motion.span>
         </motion.h1>
       </motion.div>

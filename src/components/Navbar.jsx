@@ -14,9 +14,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24">
           <Link
             to="/"
-            className="font-horizon text-3xl text-white/90 hover:text-white transition-all duration-300 hover:scale-105"
+            className="hover:opacity-80 transition-all duration-300"
           >
-            PresMUN
+            <img src="./logo.png" alt="PresMUN Logo" className="h-20" />
           </Link>
 
           {/* Hamburger Menu Button */}
@@ -50,7 +50,7 @@ export default function Navbar() {
                     About Us
                   </span>
                 </div>
-                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-56 backdrop-blur-xl bg-white/5 rounded-xl shadow-lg py-2 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <div className="absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-56 backdrop-blur-xl bg-white/5 rounded-xl shadow-lg py-2 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-white/10">
                   <Link
                     to="/about/presmun"
                     className="block px-6 py-3 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
@@ -89,7 +89,7 @@ export default function Navbar() {
                     Others
                   </span>
                 </div>
-                <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-56 backdrop-blur-xl bg-white/5 rounded-xl shadow-lg py-2 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <div className="absolute right-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 mt-2 w-56 backdrop-blur-xl bg-white/5 rounded-xl shadow-lg py-2 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border border-white/10">
                   <Link
                     to="/join-us"
                     className="block px-6 py-3 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
@@ -110,7 +110,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden fixed inset-x-0 bg-black/95 backdrop-blur-lg transition-all duration-300 ease-in-out ${
+          className={`md:hidden fixed inset-x-0 bg-[#000420]/95 backdrop-blur-lg transition-all duration-300 ease-in-out ${
             isOpen
               ? 'opacity-100 translate-y-0 visible'
               : 'opacity-0 -translate-y-full invisible'

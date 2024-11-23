@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/sections/Hero';
 import SectionTitle from '../components/ui/SectionTitle';
-import { FaUsers, FaHandshake, FaQuoteLeft, FaNewspaper } from 'react-icons/fa';
+import { FaUsers, FaHandshake, FaQuoteLeft, FaNewspaper, FaInstagram, FaLine, FaEnvelope } from 'react-icons/fa';
 
 export default function Home() {
   const councils = [
@@ -25,139 +25,198 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#000420] to-[#00072d] min-h-screen text-white">
-      <Hero />
+    <div className="bg-[#000420] min-h-screen text-white">
+      <div className="fixed inset-0 bg-[#000420]">
+        <div className="absolute inset-0" style={{ 
+          backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, #000420 70%)',
+          backgroundSize: '50px 50px',
+          opacity: 0.3 
+        }}></div>
+      </div>
 
-      {/* About Section */}
-      <section className="py-24 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <h2 className="font-horizon text-3xl text-[#f3c623] mb-8">About PresMUN</h2>
-              <p className="font-montserrat text-lg text-white/80 leading-relaxed">
-                President International Model United Nations (PRESMUN) 2024 is an event that brings together
-                young people from across Indonesia and around the world to discuss and learn about diplomacy,
-                international relations, and global issues.
-              </p>
-              <p className="font-montserrat text-lg text-white/80 leading-relaxed">
-                Through meaningful collaboration with various delegations, the press, and the executive board, 
-                PRESMUN 2024 serves as a platform for exchanging ideas, broadening perspectives, and building 
-                solutions for a better future.
-              </p>
-            </div>
-            <div className="relative">
-              <img 
-                src="./alden.jpg" 
-                alt="PresMUN Event" 
-                className="rounded-lg w-full h-[400px] object-cover ring-1 ring-white/10"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="relative">
+        <Hero />
 
-      {/* Councils Section */}
-      <section className="py-24 px-4 md:px-8 bg-black/20">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle icon={FaUsers} title="Our Councils" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {councils.map((council) => (
-              <div key={council.id} className="bg-black/30 backdrop-blur-xl rounded-lg border border-white/10 p-8 hover:bg-white/5 transition-all duration-300">
+        {/* About Section */}
+        <section className="py-32 px-4 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+              <div className="relative">
+                <div className="absolute -inset-4 border-l-4 border-t-4 border-[#f3c623] opacity-50"></div>
                 <img 
                   src="./alden.jpg" 
-                  alt={council.title} 
-                  className="w-32 h-32 rounded-full mx-auto mb-6 ring-2 ring-[#f3c623]" 
+                  alt="PresMUN Event" 
+                  className="w-full h-[600px] object-cover relative"
                 />
-                <h3 className="font-horizon text-2xl text-center mb-4">{council.title}</h3>
-                <p className="text-white/70 text-center">{council.description}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-24 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto space-y-16">
-          {/* Sponsors */}
-          <div>
-            <SectionTitle icon={FaHandshake} title="Sponsored By" />
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-              {[1, 2, 3, 4, 5].map((index) => (
-                <div key={index} className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300">
-                  <img 
-                    src="./alden.jpg" 
-                    alt={`Sponsor ${index}`}
-                    className="w-full aspect-square object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
-                  />
+              <div className="space-y-8 flex flex-col justify-center">
+                <h2 className="font-horizon text-6xl leading-tight">
+                  <span className="text-[#f3c623]">About</span>
+                  <br />
+                  <span className="text-white">PresMUN</span>
+                </h2>
+                <div className="space-y-6 relative">
+                  <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+                  <p className="font-montserrat text-lg text-white/90 pl-6">
+                    President International Model United Nations (PRESMUN) 2025 is an event that brings together
+                    young people from across Indonesia and around the world to discuss and learn about diplomacy,
+                    international relations, and global issues.
+                  </p>
+                  <p className="font-montserrat text-lg text-white/80 pl-6">
+                    Through meaningful collaboration with various delegations, the press, and the executive board, 
+                    PRESMUN 2025 serves as a platform for exchanging ideas, broadening perspectives, and building 
+                    solutions for a better future.
+                  </p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
+        </section>
 
-          {/* Media Partners */}
-          <div>
-            <SectionTitle icon={FaNewspaper} title="Media Partners" />
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[1, 2, 3, 4].map((index) => (
-                <div key={index} className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300">
-                  <img 
-                    src="./alden.jpg" 
-                    alt={`Media Partner ${index}`}
-                    className="w-full aspect-square object-cover rounded-lg"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24 px-4 md:px-8 bg-black/20">
-        <div className="max-w-7xl mx-auto">
-          <SectionTitle icon={FaQuoteLeft} title="What People Say" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-black/30 backdrop-blur-xl rounded-lg border border-white/10 p-8">
-                <p className="font-montserrat text-white/80 mb-6 text-lg">{testimonial.quote}</p>
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <h4 className="font-montserrat font-semibold">{testimonial.name}</h4>
-                    <p className="text-[#f3c623] text-sm">{testimonial.role}</p>
+        {/* Councils Section */}
+        <section className="py-32 px-4 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-horizon text-7xl mb-20 text-center">
+              <span className="text-white">Our</span>
+              <br />
+              <span className="text-[#f3c623]">Councils</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+              {councils.map((council) => (
+                <div key={council.id} className="relative group">
+                  <div className="absolute inset-0 bg-[#f3c623] opacity-5"></div>
+                  <div className="relative p-12 border border-white/10">
+                    <div className="absolute top-0 left-0 w-20 h-20 border-l-4 border-t-4 border-[#f3c623]"></div>
+                    <div className="absolute bottom-0 right-0 w-20 h-20 border-r-4 border-b-4 border-[#f3c623]"></div>
+                    <img 
+                      src="./alden.jpg" 
+                      alt={council.title} 
+                      className="w-40 h-40 mx-auto mb-8 object-cover" 
+                    />
+                    <h3 className="font-horizon text-3xl text-center mb-6">{council.title}</h3>
+                    <p className="text-white/70 text-center font-montserrat">{council.description}</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact Section */}
-      <section className="py-24 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="font-horizon text-3xl text-[#f3c623] mb-12">Get in Touch</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <a href="https://instagram.com/presidentmodelun" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="./alden.jpg" alt="Instagram" className="w-8 h-8 rounded-full" />
-              @presidentmodelun
-            </a>
-            <a href="mailto:secretariat.presmun@gmail.com" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="./alden.jpg" alt="Email" className="w-8 h-8 rounded-full" />
-              secretariat.presmun@gmail.com
-            </a>
-            <a href="https://linkedin.com/company/presmun" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="./alden.jpg" alt="LinkedIn" className="w-8 h-8 rounded-full" />
-              PRESMUN
-            </a>
+        {/* Partners Section */}
+        <section className="py-32 px-4 md:px-8 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-32">
+              <h2 className="font-horizon text-7xl text-center mb-16">
+                <span className="text-[#f3c623]">Sponsored</span>
+                <br />
+                <span className="text-white">By</span>
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                {[1, 2, 3, 4, 5].map((index) => (
+                  <div key={index} className="relative p-4">
+                    <div className="absolute inset-0 border border-white/10"></div>
+                    <img 
+                      src="./alden.jpg" 
+                      alt={`Sponsor ${index}`}
+                      className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h2 className="font-horizon text-7xl text-center mb-16">
+                <span className="text-white">Media</span>
+                <br />
+                <span className="text-[#f3c623]">Partners</span>
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {[1, 2, 3, 4].map((index) => (
+                  <div key={index} className="relative p-4">
+                    <div className="absolute inset-0 border border-white/10"></div>
+                    <img 
+                      src="./alden.jpg" 
+                      alt={`Media Partner ${index}`}
+                      className="w-full aspect-square object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-32 px-4 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-horizon text-7xl text-center mb-20">
+              <span className="text-[#f3c623]">What People</span>
+              <br />
+              <span className="text-white">Say</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="relative">
+                  <div className="absolute -inset-4 border-r-4 border-b-4 border-[#f3c623] opacity-30"></div>
+                  <div className="relative bg-black/30 p-8">
+                    <p className="font-montserrat text-white/80 mb-8 text-lg leading-relaxed">{testimonial.quote}</p>
+                    <div className="flex items-center gap-4">
+                      <img 
+                        src={testimonial.image} 
+                        alt={testimonial.name}
+                        className="w-16 h-16"
+                      />
+                      <div>
+                        <h4 className="font-montserrat font-semibold text-lg">{testimonial.name}</h4>
+                        <p className="text-[#f3c623]">{testimonial.role}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-32 px-4 md:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-horizon text-7xl text-center mb-16">
+              <span className="text-white">Get in</span>
+              <br />
+              <span className="text-[#f3c623]">Touch</span>
+            </h2>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-12">
+              <a 
+                href="https://instagram.com/presidentmodelun" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 hover:text-[#f3c623] transition-colors"
+              >
+                <FaInstagram className="text-2xl" />
+                <span className="font-montserrat text-lg">@presidentmodelun</span>
+              </a>
+              <a 
+                href="https://line.me/ti/p/@ghu3650+" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 hover:text-[#f3c623] transition-colors"
+              >
+                <FaLine className="text-2xl" />
+                <span className="font-montserrat text-lg">@ghu3650+</span>
+              </a>
+              <a 
+                href="mailto:secretariat.presmun@gmail.com" 
+                className="group flex items-center gap-4 hover:text-[#f3c623] transition-colors"
+              >
+                <FaEnvelope className="text-2xl" />
+                <span className="font-montserrat text-lg">secretariat.presmun@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

@@ -14,19 +14,23 @@ import PressArticle from './pages/PressArticle.jsx';
 export default function App() {
   return (
     <Router>
-      <Navbar />
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/presmun" element={<PresMUN />} />
-        <Route path="/about/pumun" element={<PUMUN />} />
-        <Route path="/councils" element={<Councils />} />
-        <Route path="/committees" element={<Committees />} />
-        <Route path="/press-article" element={<PressArticle />} />
-        <Route path="/join-us" element={<JoinUs />} />
-        <Route path="/contact" element={<Contact />} />
+            <Route path="/about/presmun" element={<PresMUN />} />
+            <Route path="/about/pumun" element={<PUMUN />} />
+            <Route path="/councils" element={<Councils />} />
+            <Route path="/committees" element={<Committees />} />
+            <Route path="/press-article" element={<PressArticle />} />
+            <Route path="/join-us" element={<JoinUs />} />
+            <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      <Footer />
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
