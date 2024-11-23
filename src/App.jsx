@@ -16,7 +16,7 @@ export default function App() {
     <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/presmunWeb" element={<Home />} />
           <Route path="/about/presmun" element={<PresMUN />} />
           <Route path="/about/pumun" element={<PUMUN />} />
           <Route path="/councils" element={<Councils />} />
