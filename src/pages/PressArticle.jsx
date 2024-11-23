@@ -8,21 +8,21 @@ export default function PressArticle() {
       date: "March 15, 2024",
       author: "Press Team",
       excerpt: "The grand opening ceremony of PresMUN 2024 welcomed delegates from across the globe...",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     },
     {
       title: "Delegates Engage in Dynamic Council Sessions",
       date: "March 16, 2024",
       author: "Press Team",
       excerpt: "Day two saw intense debates and collaborative problem-solving across all councils...",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     },
     {
       title: "PresMUN 2024 Concludes with Awards Ceremony",
       date: "March 17, 2024",
       author: "Press Team",
       excerpt: "The closing ceremony celebrated outstanding delegates and their achievements...",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     }
   ];
 

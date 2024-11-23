@@ -7,35 +7,35 @@ export default function Committees() {
     president: {
       name: "Alden Sayidina Radjab",
       role: "President",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     },
     vicePresidents: [
       {
         name: "Alden Sayidina Radjab",
         role: "Vice President I",
-        image: "/alden.jpg"
+        image: "./alden.jpg"
       },
       {
         name: "Alden Sayidina Radjab",
         role: "Vice President II",
-        image: "/alden.jpg"
+        image: "./alden.jpg"
       }
     ],
     directors: [
       {
         name: "Alden Sayidina Radjab",
         role: "Director of Operations",
-        image: "/alden.jpg"
+        image: "./alden.jpg"
       },
       {
         name: "Alden Sayidina Radjab",
         role: "Director of Public Relations",
-        image: "/alden.jpg"
+        image: "./alden.jpg"
       },
       {
         name: "Alden Sayidina Radjab",
         role: "Director of Human Resources",
-        image: "/alden.jpg"
+        image: "./alden.jpg"
       }
     ]
   };

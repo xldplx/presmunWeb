@@ -22,7 +22,7 @@ export default function Councils() {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#f3c623] to-[#eb8317] rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
               <div className="relative p-8 bg-black/30 backdrop-blur-xl rounded-lg border border-white/10">
                 <img 
-                  src="/alden.jpg" 
+                  src="./alden.jpg" 
                   alt={council.title} 
                   className="w-32 h-32 rounded-full mx-auto mb-6 ring-4 ring-[#f3c623] group-hover:scale-110 transition-all duration-300" 
                 />

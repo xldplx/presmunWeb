@@ -14,13 +14,13 @@ export default function Home() {
       name: "Alden Sayidina Radjab",
       role: "Developer",
       quote: "This is a quote. Nothing to see here.",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     },
     {
       name: "Alden Sayidina Radjab",
       role: "Developer",
       quote: "This is a quote. Nothing to see here.",
-      image: "/alden.jpg"
+      image: "./alden.jpg"
     }
   ];
 
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div className="relative">
               <img 
-                src="/alden.jpg" 
+                src="./alden.jpg" 
                 alt="PresMUN Event" 
                 className="rounded-lg w-full h-[400px] object-cover ring-1 ring-white/10"
               />
@@ -64,7 +64,7 @@ export default function Home() {
             {councils.map((council) => (
               <div key={council.id} className="bg-black/30 backdrop-blur-xl rounded-lg border border-white/10 p-8 hover:bg-white/5 transition-all duration-300">
                 <img 
-                  src="/alden.jpg" 
+                  src="./alden.jpg" 
                   alt={council.title} 
                   className="w-32 h-32 rounded-full mx-auto mb-6 ring-2 ring-[#f3c623]" 
                 />
@@ -86,7 +86,7 @@ export default function Home() {
               {[1, 2, 3, 4, 5].map((index) => (
                 <div key={index} className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300">
                   <img 
-                    src="/alden.jpg" 
+                    src="./alden.jpg" 
                     alt={`Sponsor ${index}`}
                     className="w-full aspect-square object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                   />
@@ -102,7 +102,7 @@ export default function Home() {
               {[1, 2, 3, 4].map((index) => (
                 <div key={index} className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-all duration-300">
                   <img 
-                    src="/alden.jpg" 
+                    src="./alden.jpg" 
                     alt={`Media Partner ${index}`}
                     className="w-full aspect-square object-cover rounded-lg"
                   />
@@ -144,15 +144,15 @@ export default function Home() {
           <h2 className="font-horizon text-3xl text-[#f3c623] mb-12">Get in Touch</h2>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <a href="https://instagram.com/presidentmodelun" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="/alden.jpg" alt="Instagram" className="w-8 h-8 rounded-full" />
+              <img src="./alden.jpg" alt="Instagram" className="w-8 h-8 rounded-full" />
               @presidentmodelun
             </a>
             <a href="mailto:secretariat.presmun@gmail.com" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="/alden.jpg" alt="Email" className="w-8 h-8 rounded-full" />
+              <img src="./alden.jpg" alt="Email" className="w-8 h-8 rounded-full" />
               secretariat.presmun@gmail.com
             </a>
             <a href="https://linkedin.com/company/presmun" className="flex items-center gap-3 hover:text-[#f3c623] transition-colors duration-300">
-              <img src="/alden.jpg" alt="LinkedIn" className="w-8 h-8 rounded-full" />
+              <img src="./alden.jpg" alt="LinkedIn" className="w-8 h-8 rounded-full" />
               PRESMUN
             </a>
           </div>
