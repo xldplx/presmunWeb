@@ -71,7 +71,7 @@ export default function PresMUN() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-[#f3c623] to-[#eb8317] rounded-lg blur opacity-25"></div>
             <img 
-              src="/alden.jpg" 
+              src="./alden.jpg" 
               alt="PresMUN History" 
               className="relative rounded-lg w-full object-cover aspect-video"
             />

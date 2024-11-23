@@ -68,7 +68,7 @@ export default function PUMUN() {
               <div className="relative md:pl-12">
                 <div className="absolute -left-2 md:left-10 top-0 w-4 h-4 rounded-full bg-[#f3c623]"></div>
                 <img 
-                  src="/alden.jpg" 
+                  src="./alden.jpg" 
                   alt="First Event" 
                   className="rounded-lg w-full aspect-video object-cover"
                 />
@@ -85,7 +85,7 @@ export default function PUMUN() {
               <div className="relative md:order-1 md:pr-12">
                 <div className="absolute -right-2 md:right-10 top-0 w-4 h-4 rounded-full bg-[#f3c623]"></div>
                 <img 
-                  src="/alden.jpg" 
+                  src="./alden.jpg" 
                   alt="Recognition" 
                   className="rounded-lg w-full aspect-video object-cover"
                 />
