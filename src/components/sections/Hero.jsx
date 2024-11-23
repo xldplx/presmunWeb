@@ -6,7 +6,7 @@ export default function Hero() {
     <section 
       className="h-screen flex items-center justify-center relative bg-cover bg-center bg-fixed overflow-hidden"
       style={{ 
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./background.jpg)'
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./background-presmun.jpg)',
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#000420]/30 to-[#000420]"></div>
