@@ -14,9 +14,10 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24">
           <Link
             to="/"
-            className="hover:opacity-80 transition-all duration-300"
+            className="hover:opacity-80 transition-all duration-300 flex gap-[1rem] items-center justify-center" 
           >
-            <img src="./logo.png" alt="PresMUN Logo" className="h-20" />
+            <img src="./logo.png" alt="PresMUN Logo" className="h-16" />
+            <h1 className='font-horizon text-2xl'>PRESMUN</h1>
           </Link>
 
           {/* Hamburger Menu Button */}
