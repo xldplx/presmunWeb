@@ -13,7 +13,7 @@ import PressArticle from './pages/PressArticle.jsx';
 
 export default function App() {
   return (
-    <Router basename="/presmunWeb">
+    <Router basename="/presmunWeb/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
