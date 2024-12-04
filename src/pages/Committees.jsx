@@ -2,6 +2,7 @@ import React from 'react';
 import { FaUsers } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCards, A11y } from 'swiper/modules';
+import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,15 +12,15 @@ const PhotoFrame = ({ image, name, role }) => {
   return (
     <div className="relative">
       {/* Main Photo Container */}
-      <div className="relative w-[250px] h-[350px] sm:w-[280px] sm:h-[380px] bg-[#000420]">
+      <div className="relative w-[200px] h-[300px] sm:w-[220px] sm:h-[320px] bg-[#000420]">
         {/* Inner gold corners - only top-left and bottom-right */}
-        <div className="absolute top-0 left-0 w-12 sm:w-16 h-12 sm:h-16">
-          <div className="absolute top-0 left-0 w-full h-[3px] bg-[#f3c623]"></div>
-          <div className="absolute top-0 left-0 w-[3px] h-full bg-[#f3c623]"></div>
+        <div className="absolute top-0 left-0 w-8 sm:w-10 h-8 sm:h-10">
+          <div className="absolute top-0 left-0 w-full h-[2px] bg-[#f3c623]"></div>
+          <div className="absolute top-0 left-0 w-[2px] h-full bg-[#f3c623]"></div>
         </div>
-        <div className="absolute bottom-0 right-0 w-12 sm:w-16 h-12 sm:h-16">
-          <div className="absolute bottom-0 right-0 w-full h-[3px] bg-[#f3c623]"></div>
-          <div className="absolute bottom-0 right-0 w-[3px] h-full bg-[#f3c623]"></div>
+        <div className="absolute bottom-0 right-0 w-8 sm:w-10 h-8 sm:h-10">
+          <div className="absolute bottom-0 right-0 w-full h-[2px] bg-[#f3c623]"></div>
+          <div className="absolute bottom-0 right-0 w-[2px] h-full bg-[#f3c623]"></div>
         </div>
         
         <img 
@@ -29,11 +30,11 @@ const PhotoFrame = ({ image, name, role }) => {
         />
         {/* Info Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent">
-          <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 text-center">
-            <div className="bg-[#f3c623] text-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full inline-block mb-1 sm:mb-2">
+          <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 text-center">
+            <div className="bg-[#f3c623] text-white text-xs sm:text-sm font-medium px-2 py-0.5 rounded-full inline-block mb-1">
               {role}
             </div>
-            <h4 className="text-white text-base sm:text-lg font-medium">
+            <h4 className="text-white text-sm sm:text-base font-medium truncate px-2">
               {name}
             </h4>
           </div>
@@ -46,21 +47,30 @@ const PhotoFrame = ({ image, name, role }) => {
 const DepartmentCard = ({ dept }) => {
   const allMembers = [
     { ...dept.usg, role: 'USG' },
-    ...(dept.ausg ? [{ ...dept.ausg, role: 'AUSG' }] : []),
+    ...(dept.ausg?.name ? [{ ...dept.ausg, role: 'AUSG' }] : []),
     ...dept.members.map(member => ({ ...member, role: 'Member' }))
   ];
 
   return (
-    <div className="relative">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="relative"
+    >
       {/* Background Elements */}
-      <div className="absolute -inset-8 border-l-4 border-t-4 border-[#f3c623] opacity-20"></div>
-      <div className="absolute -inset-8 border-r-4 border-b-4 border-[#f3c623] opacity-20 translate-x-4 translate-y-4"></div>
+      <div className="absolute -inset-2 sm:-inset-3 border-l-2 border-t-2 border-[#f3c623]/20"></div>
+      <div className="absolute -inset-2 sm:-inset-3 border-r-2 border-b-2 border-[#f3c623]/20 translate-x-1 translate-y-1 sm:translate-x-2 sm:translate-y-2"></div>
+      <div className="absolute -inset-3 sm:-inset-4 border-l-2 border-t-2 border-[#f3c623]/10"></div>
+      <div className="absolute -inset-3 sm:-inset-4 border-r-2 border-b-2 border-[#f3c623]/10 translate-x-2 translate-y-2 sm:translate-x-3 sm:translate-y-3"></div>
+      <div className="absolute -inset-4 sm:-inset-5 border-l-2 border-t-2 border-[#f3c623]/5"></div>
+      <div className="absolute -inset-4 sm:-inset-5 border-r-2 border-b-2 border-[#f3c623]/5 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4"></div>
       
       {/* Content */}
-      <div className="relative bg-black/20 p-12">
+      <div className="relative bg-black/20 p-4 sm:p-6 md:p-8">
         {/* Department Header */}
-        <div className="relative mb-12">
-          <h3 className="font-horizon text-2xl text-[#f3c623] tracking-wider uppercase text-center">{dept.title}</h3>
+        <div className="relative mb-6 sm:mb-8">
+          <h3 className="font-horizon text-xl sm:text-2xl text-[#f3c623] tracking-wider uppercase text-center">{dept.title}</h3>
         </div>
 
         {/* Team Slider */}
@@ -95,10 +105,10 @@ const DepartmentCard = ({ dept }) => {
         </Swiper>
 
         {/* Corner Accents */}
-        <div className="absolute top-0 left-0 w-16 h-16 border-l-4 border-t-4 border-[#f3c623]"></div>
-        <div className="absolute bottom-0 right-0 w-16 h-16 border-r-4 border-b-4 border-[#f3c623]"></div>
+        <div className="absolute top-0 left-0 w-8 h-8 sm:w-10 sm:h-10 border-l-2 border-t-2 border-[#f3c623]"></div>
+        <div className="absolute bottom-0 right-0 w-8 h-8 sm:w-10 sm:h-10 border-r-2 border-b-2 border-[#f3c623]"></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -295,116 +305,79 @@ export default function Committees() {
         }}></div>
       </div>
 
-      <div className="relative py-16 sm:py-20 md:py-24 px-4 md:px-8">
-        <div className="max-w-[1400px] mx-auto">
+      <div className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="mb-16 sm:mb-20 md:mb-24 relative">
-            <h1 className="font-horizon text-4xl sm:text-5xl md:text-6xl text-center">
-              <span className="text-[#f3c623]">The</span>
-              <br />
-              <span className="text-white">Secretariat</span>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-12 sm:mb-16 md:mb-20 relative"
+          >
+            <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
+              <span className="text-[#f3c623]">Our</span>
+              <br className="sm:hidden" />
+              <span className="text-white ml-2 sm:ml-4">Committees</span>
             </h1>
             <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50"></div>
-          </div>
+          </motion.div>
 
-          {/* Secretary Generals Section */}
-          <div className="flex flex-col items-center mb-16 sm:mb-20 md:mb-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-24 max-w-[1000px] w-full">
+          {/* Secretary Generals */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mb-12 sm:mb-16 md:mb-20"
+          >
+            <h2 className="font-horizon text-2xl sm:text-3xl text-center mb-8 sm:mb-10">
+              <span className="text-[#f3c623]">Secretary</span>
+              <span className="text-white ml-2">Generals</span>
+            </h2>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12">
               {committees.secretaryGenerals.map((sg, index) => (
-                <div key={index} className="relative">
-                  {/* Background Elements */}
-                  <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 border-l-3 border-t-3 sm:border-l-4 sm:border-t-4 border-[#f3c623] opacity-20"></div>
-                  <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 border-r-3 border-b-3 sm:border-r-4 sm:border-b-4 border-[#f3c623] opacity-20 translate-x-2 translate-y-2 sm:translate-x-4 sm:translate-y-4"></div>
-                  
-                  {/* Content */}
-                  <div className="relative bg-black/20 p-6 sm:p-8 md:p-12">
-                    {/* Role Badge */}
-                    <div className="relative mb-8 sm:mb-12">
-                      <h2 className="font-horizon text-xl sm:text-2xl text-[#f3c623] tracking-wider uppercase text-center">
-                        Secretary General {index + 1}
-                      </h2>
-                    </div>
-
-                    <div className="flex flex-col items-center">
-                      <PhotoFrame 
-                        image={sg.image} 
-                        name={sg.name}
-                        role={sg.role}
-                      />
-                    </div>
-
-                    {/* Corner Accents */}
-                    <div className="absolute top-0 left-0 w-12 h-12 sm:w-16 sm:h-16 border-l-3 border-t-3 sm:border-l-4 sm:border-t-4 border-[#f3c623]"></div>
-                    <div className="absolute bottom-0 right-0 w-12 h-12 sm:w-16 sm:h-16 border-r-3 border-b-3 sm:border-r-4 sm:border-b-4 border-[#f3c623]"></div>
-                  </div>
-                </div>
+                <motion.div 
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                >
+                  <PhotoFrame 
+                    image={sg.image}
+                    name={sg.name}
+                    role={sg.role}
+                  />
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Departments Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12 sm:gap-16 md:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
             {committees.departments.map((dept, index) => (
-              <div key={index} className="relative">
-                {/* Background Elements */}
-                <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 border-l-3 border-t-3 sm:border-l-4 sm:border-t-4 border-[#f3c623] opacity-20"></div>
-                <div className="absolute -inset-4 sm:-inset-6 md:-inset-8 border-r-3 border-b-3 sm:border-r-4 sm:border-b-4 border-[#f3c623] opacity-20 translate-x-2 translate-y-2 sm:translate-x-4 sm:translate-y-4"></div>
-                
-                {/* Content */}
-                <div className="relative bg-black/20 p-6 sm:p-8 md:p-12">
-                  {/* Department Header */}
-                  <div className="relative mb-8 sm:mb-12">
-                    <h3 className="font-horizon text-xl sm:text-2xl text-[#f3c623] tracking-wider uppercase text-center">{dept.title}</h3>
-                  </div>
-
-                  {/* Team Slider */}
-                  <Swiper
-                    modules={[Navigation, Pagination, EffectCards, A11y]}
-                    effect="cards"
-                    grabCursor={true}
-                    navigation={true}
-                    pagination={{
-                      clickable: true,
-                      dynamicBullets: true
-                    }}
-                    cardsEffect={{
-                      perSlideOffset: 8,
-                      perSlideRotate: 2,
-                      rotate: true,
-                      slideShadows: false
-                    }}
-                    className="team-swiper !px-0 !py-4"
-                  >
-                    {[dept.usg, ...(dept.ausg ? [dept.ausg] : []), ...dept.members].map((member, idx) => (
-                      <SwiperSlide key={idx}>
-                        <div className="flex items-center justify-center">
-                          <PhotoFrame 
-                            image={member.image} 
-                            name={member.name}
-                            role={idx === 0 ? 'USG' : idx === 1 && dept.ausg ? 'AUSG' : 'Member'}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-
-                  {/* Corner Accents */}
-                  <div className="absolute top-0 left-0 w-12 h-12 sm:w-16 sm:h-16 border-l-3 border-t-3 sm:border-l-4 sm:border-t-4 border-[#f3c623]"></div>
-                  <div className="absolute bottom-0 right-0 w-12 h-12 sm:w-16 sm:h-16 border-r-3 border-b-3 sm:border-r-4 sm:border-b-4 border-[#f3c623]"></div>
-                </div>
-              </div>
+              <motion.div
+                key={dept.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+              >
+                <DepartmentCard dept={dept} />
+              </motion.div>
             ))}
           </div>
 
           {/* Bottom Decoration */}
-          <div className="mt-16 sm:mt-24 md:mt-32 flex items-center gap-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="mt-12 sm:mt-16 md:mt-20 flex items-center gap-4"
+          >
             <div className="flex-1 h-px bg-gradient-to-r from-[#f3c623] to-transparent"></div>
-            <FaUsers className="text-4xl text-[#f3c623]" />
+            <FaUsers className="text-2xl sm:text-3xl text-[#f3c623]" />
             <div className="flex-1 h-px bg-gradient-to-l from-[#f3c623] to-transparent"></div>
-          </div>
+          </motion.div>
         </div>
       </div>
-
       <style jsx global>{`
         .team-swiper {
           padding: 20px 0;
@@ -413,11 +386,18 @@ export default function Committees() {
         .swiper-button-next,
         .swiper-button-prev {
           color: #f3c623 !important;
+          opacity: 0.8;
+          transition: opacity 0.3s ease;
+        }
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+          opacity: 1;
         }
         /* Pagination bullets */
         .swiper-pagination-bullet {
           background: #f3c623 !important;
           opacity: 0.3;
+          transition: opacity 0.3s ease;
         }
         .swiper-pagination-bullet-active {
           opacity: 1;
