@@ -31,7 +31,7 @@ export default function PUMUN() {
         }}></div>
       </div>
 
-      <div className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
+      <div className="relative py-[5rem] sm:py-16 md:py-[10rem] px-4 sm:px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div 

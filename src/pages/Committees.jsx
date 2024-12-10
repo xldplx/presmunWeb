@@ -305,7 +305,7 @@ export default function Committees() {
         }}></div>
       </div>
 
-      <div className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
+      <div className="relative py-[5rem] sm:py-16 md:py-[10rem] px-4 sm:px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div 
@@ -333,12 +333,12 @@ export default function Committees() {
               <span className="text-[#f3c623]">Secretary</span>
               <span className="text-white ml-2">Generals</span>
             </h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 md:gap-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 md:gap-16">
               {committees.secretaryGenerals.map((sg, index) => (
                 <motion.div 
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  animate={{ opacity: 1, scale: 1.2 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                 >
                   <PhotoFrame 
