@@ -56,7 +56,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-l-2 border-t-2 sm:border-l-3 sm:border-t-3 border-[#f3c623] opacity-20"></div>
                 <img 
-                  src="./alden.jpg" 
+                  src="./kaneki.jpg" 
                   alt="PresMUN Event" 
                   className="w-full h-[280px] sm:h-[320px] md:h-[360px] object-cover relative"
                 />
@@ -96,7 +96,7 @@ export default function Home() {
                     <div className="relative mb-6 sm:mb-8">
                       <div className="absolute -inset-1 border-2 border-[#f3c623] opacity-50"></div>
                       <img 
-                        src="./alden.jpg" 
+                        src="./kaneki.jpg" 
                         alt={council.title}
                         className="w-full h-[220px] sm:h-[240px] md:h-[260px] object-cover"
                       />
@@ -208,7 +208,7 @@ export default function Home() {
                   
                   <div className="relative bg-black/20 p-4 sm:p-6 md:p-8 flex items-center justify-center">
                     <img 
-                      src="./alden.jpg"
+                      src="./kaneki.jpg"
                       alt={`Sponsor ${sponsor}`}
                       className="w-full h-[120px] sm:h-[140px] md:h-[160px] object-contain"
                     />
@@ -240,7 +240,7 @@ export default function Home() {
                   
                   <div className="relative bg-black/20 p-4 sm:p-6 md:p-8 flex items-center justify-center">
                     <img 
-                      src="./alden.jpg"
+                      src="./kaneki.jpg"
                       alt={`Partner ${partner}`}
                       className="w-full h-[120px] sm:h-[140px] md:h-[160px] object-contain"
                     />
