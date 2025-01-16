@@ -117,178 +117,178 @@ const committees = {
     {
       name: "Aqila Erganisah Chairudin",
       role: "Secretary General I",
-      image: "./alden.jpg"
+      image: "./aldenpu.png"
     },
     {
       name: "Yoela Zelda Zebua",
       role: "Secretary General II",
-      image: "./alden.jpg"
+      image: "./aldenpu.png"
     }
   ],
   departments: [
     {
       title: "Administration and Legality",
-      usg: { name: "Ghaitza Diamanta", image: "./alden.jpg" },
-      ausg: { name: "Rossi Amalia", image: "./alden.jpg" },
+      usg: { name: "Ghaitza Diamanta", image: "./aldenpu.png" },
+      ausg: { name: "Rossi Amalia", image: "./aldenpu.png" },
       members: [
-        { name: "Zhafran Shahzada", image: "./alden.jpg" },
-        { name: "Emeralda Maurenzia", image: "./alden.jpg" },
-        { name: "Gina Keris Anastasia Ewi", image: "./alden.jpg" },
-        { name: "Mawlida Rizka Kamila", image: "./alden.jpg" }
+        { name: "Zhafran Shahzada", image: "./aldenpu.png" },
+        { name: "Emeralda Maurenzia", image: "./aldenpu.png" },
+        { name: "Gina Keris Anastasia Ewi", image: "./aldenpu.png" },
+        { name: "Mawlida Rizka Kamila", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Finance",
-      usg: { name: "Gabriella Rindang Dewi Arimbi", image: "./alden.jpg" },
-      ausg: { name: "Grandiessa", image: "./alden.jpg" },
+      usg: { name: "Gabriella Rindang Dewi Arimbi", image: "./aldenpu.png" },
+      ausg: { name: "Grandiessa", image: "./aldenpu.png" },
       members: [
-        { name: "Eileen Daneaya", image: "./alden.jpg" },
-        { name: "Eky Joana Alayda Ismaya", image: "./alden.jpg" },
-        { name: "Ineza Sativa Batara", image: "./alden.jpg" },
-        { name: "Raymond", image: "./alden.jpg" },
-        { name: "Valerion Theodore Chandratama", image: "./alden.jpg" },
-        { name: "Zaskiatul Ulya", image: "./alden.jpg" }
+        { name: "Eileen Daneaya", image: "./aldenpu.png" },
+        { name: "Eky Joana Alayda Ismaya", image: "./aldenpu.png" },
+        { name: "Ineza Sativa Batara", image: "./aldenpu.png" },
+        { name: "Raymond", image: "./aldenpu.png" },
+        { name: "Valerion Theodore Chandratama", image: "./aldenpu.png" },
+        { name: "Zaskiatul Ulya", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Substance",
-      usg: { name: "Brain Raska Sembiring", image: "./alden.jpg" },
-      ausg: { name: "Vanessa Manuela Patty", image: "./alden.jpg" },
+      usg: { name: "Brain Raska Sembiring", image: "./aldenpu.png" },
+      ausg: { name: "Vanessa Manuela Patty", image: "./aldenpu.png" },
       members: [
-        { name: "Arrum Kania Faizah Az-Zahra", image: "./alden.jpg" },
-        { name: "Faiz Orlando Amryanto Pidani", image: "./alden.jpg" },
-        { name: "Rafi Dwiputra Daniswara", image: "./alden.jpg" },
-        { name: "Fasha Yoga Prasetya", image: "./alden.jpg" },
-        { name: "Zanaya Mauranisa", image: "./alden.jpg" },
-        { name: "Olivia Victoria Thenu", image: "./alden.jpg" },
-        { name: "Vima Syaddad Alfathan", image: "./alden.jpg" },
-        { name: "Jedda Muncar RR", image: "./alden.jpg" },
-        { name: "Daffa Dwika Fadiya Hidayat", image: "./alden.jpg" }
+        { name: "Arrum Kania Faizah Az-Zahra", image: "./aldenpu.png" },
+        { name: "Faiz Orlando Amryanto Pidani", image: "./aldenpu.png" },
+        { name: "Rafi Dwiputra Daniswara", image: "./aldenpu.png" },
+        { name: "Fasha Yoga Prasetya", image: "./aldenpu.png" },
+        { name: "Zanaya Mauranisa", image: "./aldenpu.png" },
+        { name: "Olivia Victoria Thenu", image: "./aldenpu.png" },
+        { name: "Vima Syaddad Alfathan", image: "./aldenpu.png" },
+        { name: "Jedda Muncar RR", image: "./aldenpu.png" },
+        { name: "Daffa Dwika Fadiya Hidayat", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Conference",
-      usg: { name: "Salwa Nurunnadia Laoh", image: "./alden.jpg" },
-      ausg: { name: "Bella Adilla", image: "./alden.jpg" },
+      usg: { name: "Salwa Nurunnadia Laoh", image: "./aldenpu.png" },
+      ausg: { name: "Bella Adilla", image: "./aldenpu.png" },
       members: [
-        { name: "Chandra Aden Akbar Pamungkas", image: "./alden.jpg" },
-        { name: "Haura Zauziha Az-Zahra", image: "./alden.jpg" },
-        { name: "Muhammad Khairatul", image: "./alden.jpg" },
-        { name: "Athira Zahra", image: "./alden.jpg" },
-        { name: "Ranya Kayla Bilqisthi", image: "./alden.jpg" },
-        { name: "Pandu Anurullah", image: "./alden.jpg" },
-        { name: "Avelife Maria Easter Saroinsong", image: "./alden.jpg" },
-        { name: "Farica Adnan Ramadhani", image: "./alden.jpg" },
-        { name: "Sherly Natania Hadi", image: "./alden.jpg" },
-        { name: "Rizky Aulia Putri", image: "./alden.jpg" },
-        { name: "Muhammad Raffi Ramdhan", image: "./alden.jpg" },
-        { name: "Gio Algifari", image: "./alden.jpg" },
-        { name: "Zaidan Mahfudz Azzam Saidi", image: "./alden.jpg" },
-        { name: "Cut Putri Alya Vanissa", image: "./alden.jpg" },
-        { name: "Nadia Aulia Azzera", image: "./alden.jpg" },
-        { name: "Muflyhah Wilda Az-Zahra", image: "./alden.jpg" },
-        { name: "Meutia Putri Sayzaman", image: "./alden.jpg" },
-        { name: "Delia Sari", image: "./alden.jpg" },
-        { name: "Elisa Maisarah", image: "./alden.jpg" }
+        { name: "Chandra Aden Akbar Pamungkas", image: "./aldenpu.png" },
+        { name: "Haura Zauziha Az-Zahra", image: "./aldenpu.png" },
+        { name: "Muhammad Khairatul", image: "./aldenpu.png" },
+        { name: "Athira Zahra", image: "./aldenpu.png" },
+        { name: "Ranya Kayla Bilqisthi", image: "./aldenpu.png" },
+        { name: "Pandu Anurullah", image: "./aldenpu.png" },
+        { name: "Avelife Maria Easter Saroinsong", image: "./aldenpu.png" },
+        { name: "Farica Adnan Ramadhani", image: "./aldenpu.png" },
+        { name: "Sherly Natania Hadi", image: "./aldenpu.png" },
+        { name: "Rizky Aulia Putri", image: "./aldenpu.png" },
+        { name: "Muhammad Raffi Ramdhan", image: "./aldenpu.png" },
+        { name: "Gio Algifari", image: "./aldenpu.png" },
+        { name: "Zaidan Mahfudz Azzam Saidi", image: "./aldenpu.png" },
+        { name: "Cut Putri Alya Vanissa", image: "./aldenpu.png" },
+        { name: "Nadia Aulia Azzera", image: "./aldenpu.png" },
+        { name: "Muflyhah Wilda Az-Zahra", image: "./aldenpu.png" },
+        { name: "Meutia Putri Sayzaman", image: "./aldenpu.png" },
+        { name: "Delia Sari", image: "./aldenpu.png" },
+        { name: "Elisa Maisarah", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Internal Affairs",
-      usg: { name: "Mutiara Anindya Abidin", image: "./alden.jpg" },
-      ausg: { name: "Maureene Aqilla Ferdian", image: "./alden.jpg" },
+      usg: { name: "Mutiara Anindya Abidin", image: "./aldenpu.png" },
+      ausg: { name: "Maureene Aqilla Ferdian", image: "./aldenpu.png" },
       members: [
-        { name: "Alfendo Rahmadani Aryo Prakoso", image: "./alden.jpg" },
-        { name: "Annisa Nur Rahmi", image: "./alden.jpg" },
-        { name: "Aqela Firyal Zahira", image: "./alden.jpg" },
-        { name: "Claudia Meta Tasya Cikita", image: "./alden.jpg" },
-        { name: "Fathya Rizky Rania Mandai", image: "./alden.jpg" },
-        { name: "Hazel Jocelyn Tiurma Riva Sitorus", image: "./alden.jpg" },
-        { name: "Nadia Adelia Nasution", image: "./alden.jpg" },
-        { name: "Rachel Elisabeth", image: "./alden.jpg" },
-        { name: "Raisya Herlia Putranto", image: "./alden.jpg" },
-        { name: "Roxy Talitha Athallah", image: "./alden.jpg" },
-        { name: "Teressa Harimurti", image: "./alden.jpg" }
+        { name: "Alfendo Rahmadani Aryo Prakoso", image: "./aldenpu.png" },
+        { name: "Annisa Nur Rahmi", image: "./aldenpu.png" },
+        { name: "Aqela Firyal Zahira", image: "./aldenpu.png" },
+        { name: "Claudia Meta Tasya Cikita", image: "./aldenpu.png" },
+        { name: "Fathya Rizky Rania Mandai", image: "./aldenpu.png" },
+        { name: "Hazel Jocelyn Tiurma Riva Sitorus", image: "./aldenpu.png" },
+        { name: "Nadia Adelia Nasution", image: "./aldenpu.png" },
+        { name: "Rachel Elisabeth", image: "./aldenpu.png" },
+        { name: "Raisya Herlia Putranto", image: "./aldenpu.png" },
+        { name: "Roxy Talitha Athallah", image: "./aldenpu.png" },
+        { name: "Teressa Harimurti", image: "./aldenpu.png" }
       ]
     },
     {
       title: "External Affairs",
-      usg: { name: "Nadine Chandrawinata Wenas", image: "./alden.jpg" },
-      ausg: { name: "Aulia Dwi", image: "./alden.jpg" },
+      usg: { name: "Nadine Chandrawinata Wenas", image: "./aldenpu.png" },
+      ausg: { name: "Aulia Dwi", image: "./aldenpu.png" },
       members: [
-        { name: "Akna Khoirun Nisa", image: "./alden.jpg" },
-        { name: "Nur Azizah Iqrimah Siregar", image: "./alden.jpg" },
-        { name: "Nagita Alifia Kusuma Salsabilla", image: "./alden.jpg" },
-        { name: "Ramya Syazwina Zulcham", image: "./alden.jpg" },
-        { name: "Fikri Aji", image: "./alden.jpg" },
-        { name: "Eleonora Joycelyne", image: "./alden.jpg" },
-        { name: "Thomas William P", image: "./alden.jpg" },
-        { name: "Dyna Syarifa", image: "./alden.jpg" },
-        { name: "Jihan Hamdalah", image: "./alden.jpg" }
+        { name: "Akna Khoirun Nisa", image: "./aldenpu.png" },
+        { name: "Nur Azizah Iqrimah Siregar", image: "./aldenpu.png" },
+        { name: "Nagita Alifia Kusuma Salsabilla", image: "./aldenpu.png" },
+        { name: "Ramya Syazwina Zulcham", image: "./aldenpu.png" },
+        { name: "Fikri Aji", image: "./aldenpu.png" },
+        { name: "Eleonora Joycelyne", image: "./aldenpu.png" },
+        { name: "Thomas William P", image: "./aldenpu.png" },
+        { name: "Dyna Syarifa", image: "./aldenpu.png" },
+        { name: "Jihan Hamdalah", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Multimedia, Design, and Documentation (MTDD)",
-      usg: { name: "Mifta Farid Masyuchrin", image: "./alden.jpg" },
-      ausg: { name: "Siti Najmatul Mu'izzah Masruchin", image: "./alden.jpg" },
+      usg: { name: "Mifta Farid Masyuchrin", image: "./aldenpu.png" },
+      ausg: { name: "Siti Najmatul Mu'izzah Masruchin", image: "./aldenpu.png" },
       members: [
-        { name: "Jemima Grace Marcella Paserang", image: "./alden.jpg" },
-        { name: "Sadrina Azzahra Alhabsyi", image: "./alden.jpg" },
-        { name: "Nyayu Nur Amalia Yahya", image: "./alden.jpg" },
-        { name: "Zefanya Febe Putranti", image: "./alden.jpg" },
-        { name: "Taqya Aulia Herdiyana", image: "./alden.jpg" },
-        { name: "Anvil Salsabila", image: "./alden.jpg" },
-        { name: "Putri Amaliah Miftahuljannah", image: "./alden.jpg" },
-        { name: "Farhan", image: "./alden.jpg" },
-        { name: "Antonius Bagus Prasetio", image: "./alden.jpg" }
+        { name: "Jemima Grace Marcella Paserang", image: "./aldenpu.png" },
+        { name: "Sadrina Azzahra Alhabsyi", image: "./aldenpu.png" },
+        { name: "Nyayu Nur Amalia Yahya", image: "./aldenpu.png" },
+        { name: "Zefanya Febe Putranti", image: "./aldenpu.png" },
+        { name: "Taqya Aulia Herdiyana", image: "./aldenpu.png" },
+        { name: "Anvil Salsabila", image: "./aldenpu.png" },
+        { name: "Putri Amaliah Miftahuljannah", image: "./aldenpu.png" },
+        { name: "Farhan", image: "./aldenpu.png" },
+        { name: "Antonius Bagus Prasetio", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Data Master",
-      usg: { name: "Shakiva Naswa Crescensia", image: "./alden.jpg" },
-      ausg: { name: "Muhammad Yusuf Firizki", image: "./alden.jpg" },
+      usg: { name: "Shakiva Naswa Crescensia", image: "./aldenpu.png" },
+      ausg: { name: "Muhammad Yusuf Firizki", image: "./aldenpu.png" },
       members: [
-        { name: "Alden Sayidina Radjab", image: "./alden.jpg" },
-        { name: "Samuel Jagar Adoman Manalu", image: "./alden.jpg" }
+        { name: "aldenpu pngidina Radjab", image: "./aldenpu.png" },
+        { name: "Samuel Jagar Adoman Manalu", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Marketing",
-      usg: { name: "Beby Joya", image: "./alden.jpg" },
-      ausg: { name: "Akifah Nur Fadhillah", image: "./alden.jpg" },
+      usg: { name: "Beby Joya", image: "./aldenpu.png" },
+      ausg: { name: "Akifah Nur Fadhillah", image: "./aldenpu.png" },
       members: [
-        { name: "Bestari Ashhabal Jannati", image: "./alden.jpg" },
-        { name: "Dellinda Christiani Karongkong", image: "./alden.jpg" },
-        { name: "Nailah Azmi", image: "./alden.jpg" },
-        { name: "Katrina", image: "./alden.jpg" },
-        { name: "Nasyeila Nayla", image: "./alden.jpg" },
-        { name: "Aurellia Hillary", image: "./alden.jpg" },
-        { name: "Lulu Juwita", image: "./alden.jpg" }
+        { name: "Bestari Ashhabal Jannati", image: "./aldenpu.png" },
+        { name: "Dellinda Christiani Karongkong", image: "./aldenpu.png" },
+        { name: "Nailah Azmi", image: "./aldenpu.png" },
+        { name: "Katrina", image: "./aldenpu.png" },
+        { name: "Nasyeila Nayla", image: "./aldenpu.png" },
+        { name: "Aurellia Hillary", image: "./aldenpu.png" },
+        { name: "Lulu Juwita", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Entrepreneurship",
-      usg: { name: "Alfeiza Ghenaya Rizqi", image: "./alden.jpg" },
-      ausg: { name: "Ardel Davin", image: "./alden.jpg" },
+      usg: { name: "Alfeiza Ghenaya Rizqi", image: "./aldenpu.png" },
+      ausg: { name: "Ardel Davin", image: "./aldenpu.png" },
       members: [
-        { name: "Khairun Najwa Ambrollah", image: "./alden.jpg" },
-        { name: "Zahwa Rindu Setianka", image: "./alden.jpg" },
-        { name: "Firdha Natasya", image: "./alden.jpg" },
-        { name: "Yobel Felixio Sempurna", image: "./alden.jpg" },
-        { name: "M. Farhan", image: "./alden.jpg" },
-        { name: "Azura Balqissyah Zahra", image: "./alden.jpg" },
-        { name: "Arjuando Tampubolon", image: "./alden.jpg" }
+        { name: "Khairun Najwa Ambrollah", image: "./aldenpu.png" },
+        { name: "Zahwa Rindu Setianka", image: "./aldenpu.png" },
+        { name: "Firdha Natasya", image: "./aldenpu.png" },
+        { name: "Yobel Felixio Sempurna", image: "./aldenpu.png" },
+        { name: "M. Farhan", image: "./aldenpu.png" },
+        { name: "Azura Balqissyah Zahra", image: "./aldenpu.png" },
+        { name: "Arjuando Tampubolon", image: "./aldenpu.png" }
       ]
     },
     {
       title: "Food and Beverage",
-      usg: { name: "Jelita Nazhifah", image: "./alden.jpg" },
+      usg: { name: "Jelita Nazhifah", image: "./aldenpu.png" },
       ausg: { name: "", image: "" },
       members: [
-        { name: "Jelita Rotua Sitanggang", image: "./alden.jpg" },
-        { name: "Bianca Jillian Kimberly", image: "./alden.jpg" },
-        { name: "Davin Deannova", image: "./alden.jpg" },
-        { name: "Nadzma Salzabilla", image: "./alden.jpg" },
-        { name: "Graciella Bernadette", image: "./alden.jpg" }
+        { name: "Jelita Rotua Sitanggang", image: "./aldenpu.png" },
+        { name: "Bianca Jillian Kimberly", image: "./aldenpu.png" },
+        { name: "Davin Deannova", image: "./aldenpu.png" },
+        { name: "Nadzma Salzabilla", image: "./aldenpu.png" },
+        { name: "Graciella Bernadette", image: "./aldenpu.png" }
       ]
     }
   ]
