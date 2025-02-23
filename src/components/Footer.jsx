@@ -15,7 +15,7 @@ export default function Footer() {
     },
     {
       icon: <FaEnvelope />,
-      href: "mailto:secretariat.presmun@gmail.com",
+      href: "mailto:secretariatpresmun.official@gmail.com",
       hoverColor: "hover:text-[#f3c623]"
     },
     {

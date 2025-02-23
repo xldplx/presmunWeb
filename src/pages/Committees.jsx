@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cards';
+import { image } from 'framer-motion/client';
 
 const PhotoFrame = ({ image, name, role }) => {
   return (
