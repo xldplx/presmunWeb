@@ -23,8 +23,8 @@ export default function Contact() {
     {
       icon: <FaEnvelope className="text-3xl" />,
       platform: "Email",
-      value: "secretariat.presmun@gmail.com",
-      link: "mailto:secretariat.presmun@gmail.com",
+      value: "secretariatpresmun.official@gmail.com",
+      link: "mailto:secretariatpresmun.official@gmail.com",
       color: "from-[#f3c623] to-[#eb8317]",
       hoverColor: "group-hover:text-[#f3c623]"
     },
