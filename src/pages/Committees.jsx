@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUsers } from 'react-icons/fa';
+import { FaUsers, FaCrown, FaStar } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCards, A11y } from 'swiper/modules';
 import { motion } from 'framer-motion';
@@ -8,11 +8,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cards';
 
-const PhotoFrame = ({ image, name, role }) => {
+const PhotoFrame = ({ image, name, role, isSpecial = false }) => {
   return (
     <div className="relative">
       {/* Main Photo Container */}
-      <div className="relative w-[200px] h-[300px] sm:w-[220px] sm:h-[320px] bg-[#000420]">
+      <div className={`relative w-[200px] h-[300px] sm:w-[220px] sm:h-[320px] bg-[#000420] ${isSpecial ? 'border-2 border-[#f3c623]' : ''}`}>
         {/* Inner gold corners - only top-left and bottom-right */}
         <div className="absolute top-0 left-0 w-8 sm:w-10 h-8 sm:h-10">
           <div className="absolute top-0 left-0 w-full h-[2px] bg-[#f3c623]"></div>
@@ -34,7 +34,7 @@ const PhotoFrame = ({ image, name, role }) => {
             <div className="bg-[#f3c623] text-white text-xs sm:text-sm font-medium px-2 py-0.5 rounded-full inline-block mb-1">
               {role}
             </div>
-            <h4 className="text-white text-sm sm:text-base font-medium truncate px-2">
+            <h4 className="text-white text-sm sm:text-base font-medium px-2 whitespace-normal break-words">
               {name}
             </h4>
           </div>
@@ -113,6 +113,18 @@ const DepartmentCard = ({ dept }) => {
 };
 
 const committees = {
+  directorateGenerals: [
+    {
+      name: "Gabriel Eiffel Ananda Christianto Wibisono",
+      role: "Directorate General I",
+      image: "./aldenpu.png"
+    },
+    {
+      name: "Rahmadiah Josina Ukas",
+      role: "Directorate General II",
+      image: "./aldenpu.png"
+    }
+  ],
   secretaryGenerals: [
     {
       name: "Aqila Erganisah Chairudin",
@@ -121,7 +133,7 @@ const committees = {
     },
     {
       name: "Yoela Zelda Zebua",
-      role: "Secretary General II",
+      role: "Deputy Secretary General",
       image: "./aldenpu.png"
     }
   ],
@@ -247,7 +259,7 @@ const committees = {
       usg: { name: "Shakiva Naswa Crescensia", image: "./aldenpu.png" },
       ausg: { name: "Muhammad Yusuf Firizki", image: "./aldenpu.png" },
       members: [
-        { name: "aldenpu pngidina Radjab", image: "./aldenpu.png" },
+        { name: "Alden Sayidina Radjab", image: "./aldenpu.png" },
         { name: "Samuel Jagar Adoman Manalu", image: "./aldenpu.png" }
       ]
     },
@@ -297,6 +309,7 @@ const committees = {
 export default function Committees() {
   return (
     <div className="bg-[#000420] min-h-screen text-white/90">
+      {/* Background pattern */}
       <div className="fixed inset-0 bg-[#000420]">
         <div className="absolute inset-0" style={{ 
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, #000420 70%)',
@@ -322,32 +335,111 @@ export default function Committees() {
             <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50"></div>
           </motion.div>
 
+          {/* Directorate Generals */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mb-20 sm:mb-24 relative"
+          >
+            {/* Special Background */}
+            <div className="absolute inset-0 bg-[#000420] rounded-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f3c623]/10 to-transparent"></div>
+              <div className="absolute inset-0 border border-[#f3c623]/20 rounded-lg"></div>
+            </div>
+
+            <div className="relative z-10 p-[1rem]">
+              <h2 className="font-horizon text-3xl sm:text-4xl text-center mb-8 sm:mb-12">
+                <span className="text-[#f3c623]">Directorate</span>
+                <span className="text-white ml-2">Generals</span>
+                <FaCrown className="inline-block ml-3 text-[#f3c623] text-2xl sm:text-3xl" />
+              </h2>
+              
+              {/* Glowing Effect Container */}
+              <div className="relative p-6 sm:p-8 rounded-lg">
+                <div className="absolute inset-0 rounded-lg bg-[#f3c623]/10 blur-md"></div>
+                <div className="relative z-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+                    {committees.directorateGenerals.map((dg, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
+                        className="flex flex-col items-center"
+                      >
+                        <div className="relative">
+                          <PhotoFrame 
+                            image={dg.image}
+                            name={dg.name}
+                            role={dg.role}
+                            isSpecial={true}
+                          />
+                          <FaStar className="absolute -top-3 -right-3 text-[#f3c623] text-xl animate-pulse" />
+                        </div>
+                        <div className="mt-4 text-center">
+                          <h3 className="text-xl font-medium text-[#f3c623]">{dg.name}</h3>
+                          <p className="text-sm text-white/80">{dg.role}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Secretary Generals */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-12 sm:mb-16 md:mb-20"
+            className="mb-20 sm:mb-24 relative"
           >
-            <h2 className="font-horizon text-2xl sm:text-3xl text-center mb-8 sm:mb-10">
-              <span className="text-[#f3c623]">Secretary</span>
-              <span className="text-white ml-2">Generals</span>
-            </h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 md:gap-16">
-              {committees.secretaryGenerals.map((sg, index) => (
-                <motion.div 
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1.2 }}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                >
-                  <PhotoFrame 
-                    image={sg.image}
-                    name={sg.name}
-                    role={sg.role}
-                  />
-                </motion.div>
-              ))}
+            {/* Special Background */}
+            <div className="absolute inset-0 bg-[#000420] rounded-lg">
+              <div className="absolute inset-0 bg-gradient-to-bl from-[#f3c623]/10 to-transparent"></div>
+              <div className="absolute inset-0 border border-[#f3c623]/20 rounded-lg"></div>
+            </div>
+
+            <div className="relative z-10 p-[1rem]">
+              <h2 className="font-horizon text-3xl sm:text-4xl text-center mb-8 sm:mb-12">
+                <span className="text-[#f3c623]">Secretary</span>
+                <span className="text-white ml-2">Generals</span>
+                <FaCrown className="inline-block ml-3 text-[#f3c623] text-2xl sm:text-3xl" />
+              </h2>
+              
+              {/* Glowing Effect Container */}
+              <div className="relative p-6 sm:p-8 rounded-lg">
+                <div className="absolute inset-0 rounded-lg bg-[#f3c623]/10 blur-md"></div>
+                <div className="relative z-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
+                    {committees.secretaryGenerals.map((sg, index) => (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                        className="flex flex-col items-center"
+                      >
+                        <div className="relative">
+                          <PhotoFrame 
+                            image={sg.image}
+                            name={sg.name}
+                            role={sg.role}
+                            isSpecial={true}
+                          />
+                          <FaStar className="absolute -top-3 -right-3 text-[#f3c623] text-xl animate-pulse" />
+                        </div>
+                        <div className="mt-4 text-center">
+                          <h3 className="text-xl font-medium text-[#f3c623]">{sg.name}</h3>
+                          <p className="text-sm text-white/80">{sg.role}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
 
@@ -378,6 +470,7 @@ export default function Committees() {
           </motion.div>
         </div>
       </div>
+
       <style jsx global>{`
         .team-swiper {
           padding: 20px 0;

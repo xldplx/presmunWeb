@@ -58,8 +58,7 @@ export default function PUMUN() {
             <div className="relative">
               <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
-                President University Model United Nations (PUMUN) Club is a student-based organization 
-                that operates under the direction of President University's International Relations Department.
+              President University Model United Nations (PUMUN) Club is a student-based organization that operates under the direction of President University’s International Relations Department, which was founded on June, 24th 2011. After the organization became legal, PUMUN Club held the first official event which is the Short Diplomatic Course and it was legalized among clubs at another university. PUMUN Club began to be seen as the exclusive club that fully supported the interests of International Relations students by stimulating various events around MUN due to its great focus on the global agendas. It gives proof that the involvement and active participation of its members over the years has given the best on behalf of President University with attracting more partners from various universities, while attracting more internal members from various majors.PUMUN Club has seen significant advances in terms of work programs and events in each division as a result of its growth. PUMUN Club has submitted this proposal as a work program from the Internal Agency Division to foster a sense of belonging among the members.
               </p>
             </div>
           </motion.div>

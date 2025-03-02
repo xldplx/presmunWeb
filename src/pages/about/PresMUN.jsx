@@ -58,9 +58,7 @@ export default function PresMUN() {
             <div className="relative">
               <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
-                President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference 
-                held by President University Model United Nations (PUMUN). This marks our twelfth season 
-                and our first offline event, following five consecutive years online due to COVID-19.
+              President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.
               </p>
             </div>
           </motion.div>
