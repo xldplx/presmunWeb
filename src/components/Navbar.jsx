@@ -58,7 +58,7 @@ export default function Navbar() {
             className="group flex items-center gap-4" 
           >
             <img 
-              src="./logo.png" 
+              src="./logo-white.png" 
               alt="PresMUN Logo" 
               className="h-12 transform transition-all duration-300 group-hover:scale-105" 
             />
@@ -229,7 +229,7 @@ export default function Navbar() {
                 </div>
                 <div className="ml-4 space-y-3 border-l-2 border-[#f3c623]/20 pl-4">
                   <Link
-                    to="/join-us"
+                    to={{ pathname: "https://bit.ly/PRESMUN2025EarlyBird" }}
                     className="block text-lg text-white/90 hover:text-[#f3c623] transition-colors duration-300"
                     onClick={() => setIsOpen(false)}
                   >

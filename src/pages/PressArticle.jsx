@@ -54,8 +54,14 @@ export default function PressArticle() {
             <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50"></div>
           </motion.div>
 
+          <div className="p-[10rem]">
+            <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
+              COMING SOON
+            </h1>
+          </div>
+
           {/* Articles Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
             {articles.map((article, index) => (
               <motion.div 
                 key={index}
@@ -104,7 +110,7 @@ export default function PressArticle() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
 
           {/* Bottom Decoration */}
           <motion.div 

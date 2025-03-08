@@ -63,8 +63,11 @@ export default function PresMUN() {
             </div>
           </motion.div>
 
+          <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
+            COMING SOON
+          </h1>
           {/* Highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
             {highlights.map((item, index) => (
               <motion.div 
                 key={index}
@@ -88,10 +91,10 @@ export default function PresMUN() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
 
           {/* Legacy Section */}
-          <motion.div 
+          {/* <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -123,7 +126,7 @@ export default function PresMUN() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Bottom Decoration */}
           <div className="mt-32 flex items-center gap-4">

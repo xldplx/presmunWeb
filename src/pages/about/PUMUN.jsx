@@ -64,7 +64,7 @@ export default function PUMUN() {
           </motion.div>
 
           {/* Milestones */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
             {milestones.map((item, index) => (
               <motion.div 
                 key={index}
@@ -88,7 +88,11 @@ export default function PUMUN() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
+
+          <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
+            COMING SOON
+          </h1>
 
           {/* Timeline */}
           <motion.div 
@@ -101,7 +105,7 @@ export default function PUMUN() {
             
             <div className="space-y-12 sm:space-y-24">
               {/* Timeline Item 1 */}
-              <motion.div 
+              {/* <motion.div 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
@@ -131,10 +135,10 @@ export default function PUMUN() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
 
               {/* Timeline Item 2 */}
-              <motion.div 
+              {/* <motion.div 
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
@@ -164,7 +168,7 @@ export default function PUMUN() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
 

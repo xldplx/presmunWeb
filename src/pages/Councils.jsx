@@ -76,12 +76,12 @@ export default function Councils() {
                 {/* Content */}
                 <div className="relative bg-black/20 p-4 sm:p-6">
                   <div className="relative mb-4 sm:mb-6">
-                    <div className="relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                    <div className="flex justify-center relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
                       <div className="absolute -inset-1 border-2 border-[#f3c623] opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                       <img 
                         src={council.img} 
                         alt={council.title} 
-                        className="w-full h-full object-cover"
+                        className="w-1/2 h-1/2 object-cover transform scale-125 group-hover:scale-100 transition-transform duration-500"
                       />
                     </div>
                   </div>
