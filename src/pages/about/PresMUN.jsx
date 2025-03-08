@@ -48,24 +48,118 @@ export default function PresMUN() {
             <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50"></div>
           </motion.div>
 
-          {/* Introduction */}
+          {/* Introduction (About) */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20"
           >
             <div className="relative">
               <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
               <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
-              President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.
+                President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.
               </p>
             </div>
           </motion.div>
 
-          <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
+          {/* Grand Theme */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 p-6 sm:p-8 bg-black/20 rounded-lg shadow-lg hover:shadow-xl border-l-4 border-[#f3c623] relative overflow-hidden"
+          >
+            <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-6">
+              Grand Theme
+            </h2>
+            <div className="relative text-center">
+              <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#f3c623]/50 to-transparent opacity-70"></div>
+              <div className="absolute bottom-0 right-0 w-2 h-full bg-gradient-to-t from-[#f3c623]/50 to-transparent opacity-70"></div>
+              <p className="text-white/90 text-base sm:text-lg leading-relaxed font-montserrat">
+                Answer the Nature's Call: Advancing Sustainability for a Climate-Secure Future.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Tagline */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 p-6 sm:p-8 bg-black/20 rounded-lg shadow-lg hover:shadow-xl border-l-4 border-[#f3c623] relative overflow-hidden"
+          >
+            <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-6">
+              Tagline
+            </h2>
+            <div className="relative text-center">
+              <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#f3c623]/50 to-transparent opacity-70"></div>
+              <div className="absolute bottom-0 right-0 w-2 h-full bg-gradient-to-t from-[#f3c623]/50 to-transparent opacity-70"></div>
+              <p className="text-white/90 text-base sm:text-lg leading-relaxed font-montserrat">
+                Nature's Legacy, Tomorrow's Promise
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Welcoming Remarks */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20"
+          >
+            <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-6">
+              Welcoming Remarks from Secretary General of PRESMUN 2025
+            </h2>
+            <div className="relative">
+              <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+              <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
+                As the Secretary General of PRESMUN 2025, with great excitement and enthusiasm, I welcome all of you to President International Model United Nations 2025! This year’s conference promises to be an incredible journey, filled with fresh ideas, passionate debates, and creative solutions to some of the world’s challenges. I hope this experience sparks your curiosity, sharpens your diplomatic skills, and strengthens your ability to create a better and more harmonious cooperation. Get ready to engage with fellow delegates, learn new perspectives, and have fun while solving global issues. 
+                I’m confident that each of you not only will bring lasting memories from PRESMUN 2025 but also a deeper understanding of international relations. Let’s make this a memorable and meaningful event for everyone involved. Enjoy every moment and let's make remarkable memories of this Model United Nations.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
             COMING SOON
-          </h1>
+          </h1> */}
+
+          {/* Registration Phase */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 p-6 sm:p-8 bg-black/20 rounded-lg shadow-lg hover:shadow-xl relative overflow-hidden border-t-4 border-b-4 border-[#f3c623]"
+          >
+            {/* Gradient Decorative Borders */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#f3c623]/50 to-transparent opacity-70"></div>
+            <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-l from-[#f3c623]/50 to-transparent opacity-70"></div>
+
+            <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-4">
+              Join Us at PRESMUN 2025!
+            </h2>
+            <p className="text-white/80 text-center text-base sm:text-lg font-montserrat mb-6">
+              Mark your calendars and secure your spot for an unforgettable journey at President International Model United Nations 2025. Don’t miss the chance to be part of this transformative experience!
+            </p>
+            <h3 className="font-horizon text-xl sm:text-2xl text-center text-[#f3c623] mb-4">
+              Registration Phases
+            </h3>
+            <div className="text-center space-y-3">
+              <p className="text-white/90 text-base sm:text-lg font-montserrat">
+                <span className="text-[#f3c623] font-semibold">Early Bird:</span> 25 March - 6 April 2025
+              </p>
+              <p className="text-white/90 text-base sm:text-lg font-montserrat">
+                <span className="text-[#f3c623] font-semibold">Regular Wave:</span> 11 April - 25 April 2025
+              </p>
+              <p className="text-white/90 text-base sm:text-lg font-montserrat">
+                <span className="text-[#f3c623] font-semibold">Late Phase:</span> 3 May - 20 May 2025
+              </p>
+            </div>
+          </motion.div>
+
           {/* Highlights */}
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
             {highlights.map((item, index) => (

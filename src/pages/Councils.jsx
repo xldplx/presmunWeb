@@ -8,27 +8,27 @@ export default function Councils() {
       id: 1,
       img: "./UNEP WHITE.png",
       title: "United Nations Environment Programme (UNEP)",
+      theme: "Rising Tides, Falling Diversity: Climate Change Action Against Sea Level Rise and Biodiversity Loss",
+      difficulty: "Beginner",
       description:
-        "UNEP or United Nations Environment Programme is one of the agencies under the United Nations that was established in 1972 as a result of the Stockholm Conference on the Human Environment. UNEP has the main task of coordinating international efforts in environmental protection, promoting sustainable development, and raising global awareness of environmental issues.\n\n" +
-        "UNEP is more focused on various key environmental issues, including climate change, biodiversity protection, sustainable natural resource management, pollution reduction, and waste management. One of the biggest challenges that this agency focuses on is the rise in sea levels and the loss of biodiversity as a result of climate change that has occurred significantly in recent decades.\n\n" +
-        "As the body leading global cooperation in the environmental field, UNEP initiates various international agreements, such as the Montreal Protocol to protect the ozone layer, and supports negotiations in the UN Climate Change Conference (COP), the Paris Agreement of 2015, which discusses limiting global warming to reduce the impact of rising sea levels. UNEP also facilitates various research and projects related to ecosystem restoration and conservation.",
+        "The United Nations Environment Programme (UNEP) is the leading global authority on environmental issues, dedicated to combating climate change, protecting biodiversity, and promoting sustainability. Established in 1972, UNEP works to address rising sea levels and biodiversity loss by advocating for emissions reduction, ecosystem conservation, and climate resilience. Through international cooperation and policy development, UNEP encourages global action, particularly from major emitters, to secure a sustainable and climate-resilient future.",
     },
     {
       id: 2,
       img: "./UNDP WHITE.png",
       title: "United Nations Development Programme (UNDP)",
+      theme: "Navigating Climate Change Impacts by Environmental Justice for Urban Displacement and Gentrification",
+      difficulty: "Intermediate",
       description:
-        "UNDP or United Nations Development Programme is one of the main bodies of the United Nations, established in 1965 with the primary goal of promoting sustainable development and eradicating poverty worldwide. As one of the United Nations agencies, UNDP focuses on community empowerment, strengthening the capacities of member countries, and achieving the Sustainable Development Goals (SDGs).\n\n" +
-        "UNDP also collaborates with governments, civil society organizations, and the private sector in addressing various global challenges, including climate change, social inequality, conflict, and disaster resilience. Some of the main issues that often receive UNDP's attention are women's empowerment, reduction of socio-economic inequality, environmental management, and inclusive and resilient development.\n\n" +
-        "In its journey, UNDP often refers to various international legal instruments, including the Paris Agreement which addresses climate change, supporting countries in implementing global agreements such as the 2030 Agenda for Sustainable Development. UNDP is also an important partner in international conferences that certainly involve many countries, such as the United Nations Climate Change Conferences (COP) and the World Humanitarian Summit to discuss solutions to the ongoing global challenges.",
+        "The United Nations Development programme is a body within the UN agency which centers itself on international development of society through having dedications in eradicating poverty, promoting sustainable development and strengthening democratic governance. Over 170 countries worldwide are a part of this body, assisting and funding initiatives within the frame of Sustainable Development Goals (SDGs). UNDP focuses on addressing climate challenges, preventing crises, building resilience and creating an environment of social equity via international cooperations.",
     },
     {
       id: 3,
       img: "./IPC WHITE.png",
       title: "Press Corps",
+      difficulty: "Beginner",
       description:
-        "The Press Corps refers to the group of journalists and media professionals accredited to cover news and events related to the United Nations (UN). The journalists have access to UN headquarters and various UN agencies to report on international affairs, diplomatic discussions, humanitarian efforts, and other global issues.\n\n" +
-        "The Press Corps play a crucial role in disseminating information about UN activities to the public, contributing to transparency and understanding of international events. Journalists within the Press Corps often attend UN briefings, conferences, and official meetings to report on developments and provide news coverage from a global perspective.",
+        "The Press Council at President University Model United Nations 2025 plays an important role in spreading awareness about sustainability and climate action. Under the grand theme “Answer the Nature’s Call: Advancing Sustainability for a Climate-Secure Future,” this council highlights the urgency of protecting the environment and ensuring a better future for all. On the Conference day, Press holds a responsibility to share important discussions, to inform the public, and encourage action through journalism. During the conference, the Press Team will cover debates, interview delegates, fact-check statements, and create media content like articles, newsletters, and social media updates. By being part of this council, delegates will learn how journalism influences global conversations and helps shape real-world decisions on sustainability.",
     },
   ];
 
@@ -74,27 +74,57 @@ export default function Councils() {
                 <div className="absolute -inset-2 sm:-inset-3 border-r-2 border-b-2 border-[#f3c623] opacity-20 translate-x-1 translate-y-1 sm:translate-x-2 sm:translate-y-2"></div>
                 
                 {/* Content */}
-                <div className="relative bg-black/20 p-4 sm:p-6">
-                  <div className="relative mb-4 sm:mb-6">
-                    <div className="flex justify-center relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
-                      <div className="absolute -inset-1 border-2 border-[#f3c623] opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                <div className="relative bg-black/20 p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                  {/* Image Section */}
+                  <div className="relative mb-6">
+                    <motion.div 
+                      className="flex justify-center overflow-hidden rounded-lg"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.4 }}
+                    >
                       <img 
                         src={council.img} 
                         alt={council.title} 
-                        className="w-1/2 h-1/2 object-cover transform scale-125 group-hover:scale-100 transition-transform duration-500"
+                        className="w-1/2 h-1/2 object-cover transform scale-110 group-hover:scale-100 transition-transform duration-300"
+                        onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }} // Fallback image
                       />
-                    </div>
+                    </motion.div>
                   </div>
-                  
-                  <div className="relative">
-                    <div className="absolute -left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
-                    <div className="pl-4">
-                      <h2 className="font-horizon text-lg sm:text-xl mb-3 group-hover:text-[#f3c623] transition-colors">
+
+                  {/* Text Section */}
+                  <div className="relative space-y-4">
+                    <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623]/70 to-transparent opacity-80"></div>
+                    <div className="pl-6">
+                      <h2 className="font-horizon text-lg sm:text-xl mb-2 group-hover:text-[#f3c623] transition-colors">
                         {council.title}
                       </h2>
-                      <p className="font-montserrat text-sm text-white/70 leading-relaxed">
-                        {council.description}
-                      </p>
+                      {council.theme && (
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.2, duration: 0.5 }}
+                          className="bg-[#f3c623]/20 p-3 rounded-lg mb-3 shadow-inner"
+                        >
+                          <p className="font-montserrat text-sm sm:text-base text-white/90 italic">
+                            Theme: {council.theme}
+                          </p>
+                        </motion.div>
+                      )}
+                      {council.difficulty && (
+                        <p className="font-montserrat text-sm sm:text-base text-white/70 mb-3">
+                          Difficulty: <span className="text-[#f3c623] font-semibold">{council.difficulty}</span>
+                        </p>
+                      )}
+                      <motion.div 
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.5 }}
+                        className="bg-black/10 p-4 rounded-lg border-l-4 border-[#f3c623]/50 hover:bg-black/20 transition-colors duration-300"
+                      >
+                        <p className="font-montserrat text-sm sm:text-base text-white/80 leading-relaxed">
+                          {council.description}
+                        </p>
+                      </motion.div>
                     </div>
                   </div>
 
