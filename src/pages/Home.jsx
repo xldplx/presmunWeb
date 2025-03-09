@@ -94,16 +94,16 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center">
-                <SectionTitle
-                  subtitle="About"
-                  title="PresMUN"
-                  alignment="left"
-                  className="mb-6 sm:mb-8"
-                />
-                <p className="text-sm sm:text-base text-white/70 leading-relaxed mb-4">
-                  President International Model United Nations (PRESMUN) 2025 is an event that brings together young people from across Indonesia and around the world to discuss and learn about diplomacy, international relations, and global issues. Through the meaningful collaboration, with various delegations, the press, and the executive board, PRESMUN 2025 serves as a platform for exchanging ideas, broadening perspectives, and building solutions for a better future.
-                </p>
-              </div>
+              <SectionTitle
+                subtitle="About"
+                title="What is PRESMUN 2025?"
+                alignment="left"
+                className="mb-6 sm:mb-8"
+              />
+              <p className="text-sm sm:text-base text-white/70 leading-relaxed mb-4 text-justify">
+                President International Model United Nations (PRESMUN) 2025 is an event that brings together young people from across Indonesia and around the world to discuss and learn about diplomacy, international relations, and global issues. Through the meaningful collaboration, with various delegations, the press, and the executive board, PRESMUN 2025 serves as a platform for exchanging ideas, broadening perspectives, and building solutions for a better future.
+              </p>
+            </div>
             </div>
           </div>
         </section>
@@ -149,7 +149,7 @@ export default function Home() {
                         <h2 className="font-horizon text-lg sm:text-xl mb-3 group-hover:text-[#f3c623] transition-colors">
                           {council.title}
                         </h2>
-                        <p className="font-montserrat text-sm text-white/70 leading-relaxed">
+                        <p className="font-montserrat text-sm text-white/70 leading-relaxed text-justify">
                           {council.description}
                         </p>
                       </div>
@@ -213,7 +213,7 @@ export default function Home() {
                       >
                         <FaQuoteLeft className="text-[#f3c623] text-xl opacity-50" />
                       </motion.div>
-                      <p className="text-sm text-white/70 leading-relaxed pl-6 flex-1">
+                      <p className="text-sm text-white/70 leading-relaxed pl-6 flex-1 text-justify">
                         {testimonial.quote}
                       </p>
                     </div>

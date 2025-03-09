@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { FaHistory, FaGlobeAsia, FaTrophy } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -20,6 +20,67 @@ export default function PresMUN() {
       description: "This is a description. Testing the description."
     }
   ];
+
+  const description = "President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.";
+
+  // State untuk membagi teks
+  const [textBesideLogo, setTextBesideLogo] = useState(description);
+  const [textBelowLogo, setTextBelowLogo] = useState("");
+  const [isLogoLoaded, setIsLogoLoaded] = useState(false);
+  const textRef = useRef(null);
+  const logoRef = useRef(null);
+
+  useEffect(() => {
+    const splitTextBasedOnHeight = () => {
+      if (isLogoLoaded && logoRef.current && textRef.current) {
+        requestAnimationFrame(() => {
+          const logoHeight = logoRef.current.offsetHeight;
+          const textElement = textRef.current;
+
+          // Set tinggi maksimum teks di samping logo dengan toleransi kecil
+          textElement.style.maxHeight = `${logoHeight - 10}px`; // Toleransi 10px untuk mencegah overflow
+          textElement.style.overflow = 'hidden';
+
+          // Bagi teks berdasarkan kalimat
+          const sentences = description.split('. ');
+          let besideText = '';
+          let belowText = '';
+
+          textElement.textContent = ''; // Reset teks untuk perhitungan
+
+          for (let i = 0; i < sentences.length; i++) {
+            const testText = besideText + (besideText ? '. ' : '') + sentences[i];
+            textElement.textContent = testText;
+
+            if (textElement.scrollHeight > logoHeight && i > 0) {
+              belowText = sentences.slice(i).join('. ') + (sentences[sentences.length - 1] ? '.' : '');
+              besideText = sentences.slice(0, i).join('. ') + '.';
+              break;
+            } else {
+              besideText = testText + (i < sentences.length - 1 ? '.' : '');
+            }
+          }
+
+          if (!belowText) {
+            setTextBesideLogo(description);
+            setTextBelowLogo('');
+          } else {
+            setTextBesideLogo(besideText.trim());
+            setTextBelowLogo(belowText.trim());
+          }
+        });
+      }
+    };
+
+    splitTextBasedOnHeight();
+    window.addEventListener('resize', splitTextBasedOnHeight);
+    return () => window.removeEventListener('resize', splitTextBasedOnHeight);
+  }, [isLogoLoaded]);
+
+  // Mengatur posisi scroll ke atas saat komponen dimuat
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-[#000420] min-h-screen text-white/90">
@@ -55,11 +116,44 @@ export default function PresMUN() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20"
           >
-            <div className="relative">
-              <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
-              <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
-                President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.
-              </p>
+            <div className="flex flex-col">
+              <div className="flex flex-col md:flex-row items-start">
+                {/* Logo */}
+                <div className="flex justify-start mb-4 md:mb-0 md:mr-6">
+                  <img 
+                    ref={logoRef}
+                    src="./PRESMUN WHITE.png" 
+                    alt="PresMUN Logo" 
+                    className="w-64 sm:w-72 md:w-80 h-auto object-contain"
+                    onLoad={() => setIsLogoLoaded(true)} // Set state saat logo dimuat
+                  />
+                </div>
+
+                {/* Description (Bagian yang sejajar dengan logo) */}
+                <div className="flex-1">
+                  <div className="relative">
+                    <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+                    <p 
+                      ref={textRef}
+                      className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat text-justify"
+                    >
+                      {textBesideLogo}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Description (Bagian yang melewati bawah logo) */}
+              {textBelowLogo && (
+                <div className="mt-4">
+                  <div className="relative">
+                    <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+                    <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat text-justify">
+                      {textBelowLogo}
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </motion.div>
 
@@ -67,19 +161,22 @@ export default function PresMUN() {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20 p-6 sm:p-8 bg-black/20 rounded-lg shadow-lg hover:shadow-xl border-l-4 border-[#f3c623] relative overflow-hidden"
+            className="max-w-4xl mx-auto mb-12 sm:mb-16 md:mb-20"
           >
             <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-6">
               Grand Theme
             </h2>
             <div className="relative text-center">
-              <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#f3c623]/50 to-transparent opacity-70"></div>
-              <div className="absolute bottom-0 right-0 w-2 h-full bg-gradient-to-t from-[#f3c623]/50 to-transparent opacity-70"></div>
-              <p className="text-white/90 text-base sm:text-lg leading-relaxed font-montserrat">
-                Answer the Nature's Call: Advancing Sustainability for a Climate-Secure Future.
-              </p>
+              <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+              <div className="pl-4 sm:pl-8">
+                <p className="text-[#f3c623] text-base sm:text-lg leading-relaxed font-montserrat mb-4 text-center">
+                  Answer the Nature's Call: Advancing Sustainability for a Climate-Secure Future.
+                </p>
+                <p className="text-white/80 text-base sm:text-lg leading-relaxed font-montserrat text-justify">
+                  This is the Grand Theme of the President University Model United Nations, which will serve as the battle cry for urgent actions against environmental degradation and a continuing climate crisis. It underscores that cooperation across the globe on advanced practices in sustainability, ecosystem protection, and a secured future resilient to changes is essential for the survival of humankind. This theme intends to allow the conference to be truly dynamic in innovative dialogue, policymaking, and the crafting of actionable solutions. It calls for interested parties from all walks of life to come together and discuss critically active changes, with a great emphasis on shared responsibility across all nations in response to the pressing challenges our earth is facing.
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -115,16 +212,12 @@ export default function PresMUN() {
             </h2>
             <div className="relative">
               <div className="absolute -left-2 sm:-left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
-              <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat">
+              <p className="text-white/80 text-base sm:text-lg leading-relaxed pl-4 sm:pl-8 font-montserrat text-justify">
                 As the Secretary General of PRESMUN 2025, with great excitement and enthusiasm, I welcome all of you to President International Model United Nations 2025! This year’s conference promises to be an incredible journey, filled with fresh ideas, passionate debates, and creative solutions to some of the world’s challenges. I hope this experience sparks your curiosity, sharpens your diplomatic skills, and strengthens your ability to create a better and more harmonious cooperation. Get ready to engage with fellow delegates, learn new perspectives, and have fun while solving global issues. 
                 I’m confident that each of you not only will bring lasting memories from PRESMUN 2025 but also a deeper understanding of international relations. Let’s make this a memorable and meaningful event for everyone involved. Enjoy every moment and let's make remarkable memories of this Model United Nations.
               </p>
             </div>
           </motion.div>
-
-          {/* <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">  
-            COMING SOON
-          </h1> */}
 
           {/* Registration Phase */}
           <motion.div 
@@ -141,7 +234,7 @@ export default function PresMUN() {
             <h2 className="font-horizon text-2xl sm:text-3xl md:text-4xl text-center text-[#f3c623] mb-4">
               Join Us at PRESMUN 2025!
             </h2>
-            <p className="text-white/80 text-center text-base sm:text-lg font-montserrat mb-6">
+            <p className="text-white/80 text-center text-base sm:text-lg font-montserrat mb-6 text-justify">
               Mark your calendars and secure your spot for an unforgettable journey at President International Model United Nations 2025. Don’t miss the chance to be part of this transformative experience!
             </p>
             <h3 className="font-horizon text-xl sm:text-2xl text-center text-[#f3c623] mb-4">

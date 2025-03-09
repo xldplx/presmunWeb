@@ -63,7 +63,7 @@ export default function Navbar() {
               className="h-12 transform transition-all duration-300 group-hover:scale-105" 
             />
             <span className="font-horizon text-xl text-white group-hover:text-[#f3c623] transition-colors duration-300">
-              PRESMUN
+              PRESMUN 2025
             </span>
           </Link>
 

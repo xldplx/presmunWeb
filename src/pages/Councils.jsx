@@ -9,7 +9,7 @@ export default function Councils() {
       img: "./UNEP WHITE.png",
       title: "United Nations Environment Programme (UNEP)",
       theme: "Rising Tides, Falling Diversity: Climate Change Action Against Sea Level Rise and Biodiversity Loss",
-      difficulty: "Beginner",
+      difficulty: "Beginner - Single",
       description:
         "The United Nations Environment Programme (UNEP) is the leading global authority on environmental issues, dedicated to combating climate change, protecting biodiversity, and promoting sustainability. Established in 1972, UNEP works to address rising sea levels and biodiversity loss by advocating for emissions reduction, ecosystem conservation, and climate resilience. Through international cooperation and policy development, UNEP encourages global action, particularly from major emitters, to secure a sustainable and climate-resilient future.",
     },
@@ -18,7 +18,7 @@ export default function Councils() {
       img: "./UNDP WHITE.png",
       title: "United Nations Development Programme (UNDP)",
       theme: "Navigating Climate Change Impacts by Environmental Justice for Urban Displacement and Gentrification",
-      difficulty: "Intermediate",
+      difficulty: "Intermediate -  Single",
       description:
         "The United Nations Development programme is a body within the UN agency which centers itself on international development of society through having dedications in eradicating poverty, promoting sustainable development and strengthening democratic governance. Over 170 countries worldwide are a part of this body, assisting and funding initiatives within the frame of Sustainable Development Goals (SDGs). UNDP focuses on addressing climate challenges, preventing crises, building resilience and creating an environment of social equity via international cooperations.",
     },
@@ -26,7 +26,7 @@ export default function Councils() {
       id: 3,
       img: "./IPC WHITE.png",
       title: "Press Corps",
-      difficulty: "Beginner",
+      difficulty: "Beginner - Single",
       description:
         "The Press Council at President University Model United Nations 2025 plays an important role in spreading awareness about sustainability and climate action. Under the grand theme “Answer the Nature’s Call: Advancing Sustainability for a Climate-Secure Future,” this council highlights the urgency of protecting the environment and ensuring a better future for all. On the Conference day, Press holds a responsibility to share important discussions, to inform the public, and encourage action through journalism. During the conference, the Press Team will cover debates, interview delegates, fact-check statements, and create media content like articles, newsletters, and social media updates. By being part of this council, delegates will learn how journalism influences global conversations and helps shape real-world decisions on sustainability.",
     },
@@ -106,7 +106,7 @@ export default function Councils() {
                           className="bg-[#f3c623]/20 p-3 rounded-lg mb-3 shadow-inner"
                         >
                           <p className="font-montserrat text-sm sm:text-base text-white/90 italic">
-                            Theme: {council.theme}
+                            {council.theme}
                           </p>
                         </motion.div>
                       )}
@@ -121,7 +121,7 @@ export default function Councils() {
                         transition={{ delay: 0.3, duration: 0.5 }}
                         className="bg-black/10 p-4 rounded-lg border-l-4 border-[#f3c623]/50 hover:bg-black/20 transition-colors duration-300"
                       >
-                        <p className="font-montserrat text-sm sm:text-base text-white/80 leading-relaxed">
+                        <p className="font-montserrat text-sm sm:text-base text-white/80 leading-relaxed text-justify">
                           {council.description}
                         </p>
                       </motion.div>
