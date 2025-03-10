@@ -21,9 +21,8 @@ export default function PresMUN() {
     }
   ];
 
-  const description = "President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place.";
+  const description = "President International Model United Nations (PRESMUN) 2025 is the annual MUN Conference held by President University Model United Nations (PUMUN) and this is the twelfth season of PRESMUN and is the first offline event, after five consecutive years online due to the COVID-19 in 2020. PRESMUN first installment was done in 2012 and, ever since, has received high enthusiasm and eager anticipation from local and international audiences. At the national stage, PRESMUN has achieved a certain reputation and is often deemed as one of the most prestigious MUN Conferences in Indonesia despite its young age. PRESMUN desired to expand its scope to the international community thus the name President International Model United Nations with the aim could be a platform upon which a group of young thinkers all around the world could pour their ideas and learn how to shape this world into a better place";
 
-  // State untuk membagi teks
   const [textBesideLogo, setTextBesideLogo] = useState(description);
   const [textBelowLogo, setTextBelowLogo] = useState("");
   const [isLogoLoaded, setIsLogoLoaded] = useState(false);
@@ -37,11 +36,9 @@ export default function PresMUN() {
           const logoHeight = logoRef.current.offsetHeight;
           const textElement = textRef.current;
 
-          // Set tinggi maksimum teks di samping logo dengan toleransi kecil
-          textElement.style.maxHeight = `${logoHeight - 10}px`; // Toleransi 10px untuk mencegah overflow
+          textElement.style.maxHeight = `${logoHeight - 10}px`; 
           textElement.style.overflow = 'hidden';
 
-          // Bagi teks berdasarkan kalimat
           const sentences = description.split('. ');
           let besideText = '';
           let belowText = '';
@@ -77,7 +74,6 @@ export default function PresMUN() {
     return () => window.removeEventListener('resize', splitTextBasedOnHeight);
   }, [isLogoLoaded]);
 
-  // Mengatur posisi scroll ke atas saat komponen dimuat
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

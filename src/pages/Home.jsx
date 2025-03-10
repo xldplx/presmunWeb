@@ -238,7 +238,6 @@ export default function Home() {
               className="mb-12 sm:mb-16"
             />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16">
-              {/* Kode asli dikomentari */}
               {/* {[1, 2, 3, 4].map((sponsor) => (
                 <div key={sponsor} className="relative">
                   <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-l-2 border-t-2 sm:border-l-3 sm:border-t-3 border-[#f3c623] opacity-20"></div>
@@ -279,7 +278,6 @@ export default function Home() {
               className="mb-12 sm:mb-16"
             />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 md:gap-16">
-              {/* Kode asli dikomentari */}
               {/* {[1, 2, 3, 4].map((partner) => (
                 <div key={partner} className="relative">
                   <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-l-2 border-t-2 sm:border-l-3 sm:border-t-3 border-[#f3c623] opacity-20"></div>
