@@ -1,8 +1,10 @@
-import React from 'react';
-import { FaUsers } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { FaUsers, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Councils() {
+  const [expandedCouncil, setExpandedCouncil] = useState(null);
+
   const councils = [
     {
       id: 1,
@@ -17,8 +19,8 @@ export default function Councils() {
       id: 2,
       img: "./UNDP WHITE.png",
       title: "United Nations Development Programme (UNDP)",
-      theme: "Navigating Climate Change Impacts by Environmental Justice for Urban Displacement and Gentrification",
-      difficulty: "Intermediate -  Single",
+      theme: "Reshaping Urban Development and Addressing Gentrification",
+      difficulty: "Intermediate - Single",
       description:
         "The United Nations Development programme is a body within the UN agency which centers itself on international development of society through having dedications in eradicating poverty, promoting sustainable development and strengthening democratic governance. Over 170 countries worldwide are a part of this body, assisting and funding initiatives within the frame of Sustainable Development Goals (SDGs). UNDP focuses on addressing climate challenges, preventing crises, building resilience and creating an environment of social equity via international cooperations.",
     },
@@ -28,17 +30,21 @@ export default function Councils() {
       title: "Press Corps",
       difficulty: "Beginner - Single",
       description:
-        "The Press Council at President University Model United Nations 2025 plays an important role in spreading awareness about sustainability and climate action. Under the grand theme “Answer the Nature’s Call: Advancing Sustainability for a Climate-Secure Future,” this council highlights the urgency of protecting the environment and ensuring a better future for all. On the Conference day, Press holds a responsibility to share important discussions, to inform the public, and encourage action through journalism. During the conference, the Press Team will cover debates, interview delegates, fact-check statements, and create media content like articles, newsletters, and social media updates. By being part of this council, delegates will learn how journalism influences global conversations and helps shape real-world decisions on sustainability.",
+        "The Press Council at President University Model United Nations 2025 plays an important role in spreading awareness about sustainability and climate action. Under the grand theme 'Answer the Nature's Call: Advancing Sustainability for a Climate-Secure Future,' this council highlights the urgency of protecting the environment and ensuring a better future for all. On the Conference day, Press holds a responsibility to share important discussions, to inform the public, and encourage action through journalism. During the conference, the Press Team will cover debates, interview delegates, fact-check statements, and create media content like articles, newsletters, and social media updates. By being part of this council, delegates will learn how journalism influences global conversations and helps shape real-world decisions on sustainability.",
     },
   ];
 
+  const toggleCouncil = (id) => {
+    setExpandedCouncil(expandedCouncil === id ? null : id);
+  };
+
   return (
     <div className="bg-[#000420] min-h-screen text-white/90">
+      {/* Background Pattern */}
       <div className="fixed inset-0 bg-[#000420]">
-        <div className="absolute inset-0" style={{ 
+        <div className="absolute inset-0 opacity-20" style={{ 
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, #000420 70%)',
-          backgroundSize: '50px 50px',
-          opacity: 0.3 
+          backgroundSize: '50px 50px'
         }}></div>
       </div>
 
@@ -49,94 +55,109 @@ export default function Councils() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-12 sm:mb-16 md:mb-20 relative"
+            className="mb-12 sm:mb-16 md:mb-20 text-center"
           >
-            <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
-              <span className="text-[#f3c623]">Our</span>
-              <br className="sm:hidden" />
-              <span className="text-white ml-2 sm:ml-4">Councils</span>
+            <h1 className="font-horizon text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+              <span className="text-[#f3c623]">Our</span>{' '}
+              <span className="text-white">Councils</span>
             </h1>
-            <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-[#f3c623] to-transparent opacity-50 max-w-md mx-auto"></div>
           </motion.div>
 
-          {/* Councils Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mb-12 sm:mb-16 md:mb-20">
-            {councils.map((council, index) => (
+          {/* Councils Grid - New Design */}
+          <div className="grid grid-cols-1 gap-8">
+            {councils.map((council) => (
               <motion.div 
-                key={council.id} 
+                key={council.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                className="relative group"
+                transition={{ duration: 0.5 }}
+                className="relative"
               >
-                {/* Background Elements */}
-                <div className="absolute -inset-2 sm:-inset-3 border-l-2 border-t-2 border-[#f3c623] opacity-20"></div>
-                <div className="absolute -inset-2 sm:-inset-3 border-r-2 border-b-2 border-[#f3c623] opacity-20 translate-x-1 translate-y-1 sm:translate-x-2 sm:translate-y-2"></div>
-                
-                {/* Content */}
-                <div className="relative bg-black/20 p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                  {/* Image Section */}
-                  <div className="relative mb-6">
-                    <motion.div 
-                      className="flex justify-center overflow-hidden rounded-lg"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.4 }}
-                    >
-                      <img 
-                        src={council.img} 
-                        alt={council.title} 
-                        className="w-1/2 h-1/2 object-cover transform scale-110 group-hover:scale-100 transition-transform duration-300"
-                        onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }} // Fallback image
-                      />
-                    </motion.div>
-                  </div>
-
-                  {/* Text Section */}
-                  <div className="relative space-y-4">
-                    <div className="absolute -left-2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623]/70 to-transparent opacity-80"></div>
-                    <div className="pl-6">
-                      <h2 className="font-horizon text-lg sm:text-xl mb-2 group-hover:text-[#f3c623] transition-colors">
-                        {council.title}
-                      </h2>
-                      {council.theme && (
-                        <motion.div 
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.2, duration: 0.5 }}
-                          className="bg-[#f3c623]/20 p-3 rounded-lg mb-3 shadow-inner"
+                {/* Council Card */}
+                <div 
+                  className={`relative overflow-hidden rounded-xl cursor-pointer transition-all duration-300 ${expandedCouncil === council.id ? 'bg-[#00072d]' : 'bg-[#00072d]/70 hover:bg-[#00072d]'}`}
+                  onClick={() => toggleCouncil(council.id)}
+                >
+                  {/* Glow Effect */}
+                  <div className={`absolute inset-0 bg-gradient-to-br from-[#f3c623]/10 to-transparent opacity-0 ${expandedCouncil === council.id ? 'opacity-100' : 'group-hover:opacity-50'} transition-opacity duration-300`}></div>
+                  
+                  {/* Content */}
+                  <div className="relative z-10 p-6 sm:p-8">
+                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                      {/* Logo */}
+                      <div className="w-full md:w-1/4 flex justify-center">
+                        <motion.div
+                          className="relative"
+                          whileHover={{ scale: 1.05 }}
+                          transition={{ duration: 0.3 }}
                         >
-                          <p className="font-montserrat text-sm sm:text-base text-white/90 italic">
-                            {council.theme}
+                          <div className="absolute inset-0 rounded-lg border-2 border-[#f3c623]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                          <img 
+                            src={council.img} 
+                            alt={council.title} 
+                            className="h-32 object-contain"
+                          />
+                        </motion.div>
+                      </div>
+                      
+                      {/* Text Content */}
+                      <div className="flex-1">
+                        <div className="flex justify-between items-start gap-4">
+                          <h2 className="font-horizon text-xl md:text-2xl text-[#f3c623]">
+                            {council.title}
+                          </h2>
+                          <button className="text-[#f3c623] p-1">
+                            {expandedCouncil === council.id ? <FaChevronUp /> : <FaChevronDown />}
+                          </button>
+                        </div>
+                        
+                        {council.theme && (
+                          <p className="mt-2 text-sm md:text-base text-white/80 italic">
+                            "{council.theme}"
                           </p>
+                        )}
+                        
+                        {council.difficulty && (
+                          <div className="mt-3 inline-block bg-[#f3c623]/10 px-3 py-1 rounded-full text-sm">
+                            <span className="text-[#f3c623]">{council.difficulty}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Expanded Content */}
+                    <AnimatePresence>
+                      {expandedCouncil === council.id && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="mt-6"
+                        >
+                          <div className="pt-6 border-t border-[#f3c623]/20">
+                            <div className="relative pl-6">
+                              <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#f3c623] to-transparent"></div>
+                              <p className="text-white/80 leading-relaxed text-justify">
+                                {council.description}
+                              </p>
+                            </div>
+                          </div>
                         </motion.div>
                       )}
-                      {council.difficulty && (
-                        <p className="font-montserrat text-sm sm:text-base text-white/70 mb-3">
-                          Difficulty: <span className="text-[#f3c623] font-semibold">{council.difficulty}</span>
-                        </p>
-                      )}
-                      <motion.div 
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.5 }}
-                        className="bg-black/10 p-4 rounded-lg border-l-4 border-[#f3c623]/50 hover:bg-black/20 transition-colors duration-300"
-                      >
-                        <p className="font-montserrat text-sm sm:text-base text-white/80 leading-relaxed text-justify">
-                          {council.description}
-                        </p>
-                      </motion.div>
-                    </div>
+                    </AnimatePresence>
                   </div>
-
+                  
                   {/* Corner Accents */}
-                  <div className="absolute top-0 left-0 w-6 h-6 sm:w-8 sm:h-8 border-l-2 border-t-2 border-[#f3c623]"></div>
-                  <div className="absolute bottom-0 right-0 w-6 h-6 sm:w-8 sm:h-8 border-r-2 border-b-2 border-[#f3c623]"></div>
+                  <div className="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-[#f3c623] opacity-50"></div>
+                  <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-[#f3c623] opacity-50"></div>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Bottom Decoration */}
+          {/* Footer Decoration */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

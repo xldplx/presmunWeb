@@ -62,13 +62,13 @@ export default function Navbar() {
               alt="PresMUN Logo" 
               className="h-12 transform transition-all duration-300 group-hover:scale-105" 
             />
-            <span className="font-horizon text-xl text-white group-hover:text-[#f3c623] transition-colors duration-300">
+            <span className="font-horizon text-[1rem] text-white group-hover:text-[#f3c623] transition-colors duration-300">
               PRESMUN 2025
             </span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 font-montserrat">
             {/* About Us Dropdown */}
             <div className="relative group">
               <button className="flex items-center space-x-2 text-white group-hover:text-[#f3c623] transition-colors duration-300">
@@ -170,7 +170,7 @@ export default function Navbar() {
           }`}
           style={{ top: '80px' }}
         >
-          <div className="h-full overflow-y-auto">
+          <div className="h-full overflow-y-auto font-montserrat">
             <div className="p-6 space-y-6">
               {/* About Us Section */}
               <div>
