@@ -118,190 +118,190 @@ const committees = {
     {
       name: "Gabriel Eiffel Ananda Christianto Wibisono",
       role: "Directorate General I",
-      image: "assets/committees/DIRECTORATE SECRETARY GENERAL/Directorate Secretary General-Gabriel Eiffel.png"
+      image: "assets/committees/DIRECTORATE SECRETARY GENERAL/Directorate_Secretary_General-Gabriel_Eiffel.png"
     },
     {
       name: "Rahmadiah Josina Ukas",
       role: "Directorate General II",
-      image: "assets/committees/DIRECTORATE SECRETARY GENERAL/Directorat Secretary General-Rahmadiah Josina Ukas.png"
+      image: "assets/committees/DIRECTORATE SECRETARY GENERAL/Directorat_Secretary_General-Rahmadiah_Josina_Ukas.png"
     }
   ],
   secretaryGenerals: [
     {
       name: "Aqilah Erganisah Chairudin",
       role: "Secretary General",
-      image: "assets/committees/SECRETARY GENERAL AND DEPUTY/Secretary General-Aqilah Erganisah Chairudin.png"
+      image: "assets/committees/SECRETARY GENERAL AND DEPUTY/Secretary_General-Aqilah_Erganisah_Chairudin.png"
     },
     {
       name: "Yoela Zelda Zebua",
       role: "Deputy Secretary General",
-      image: "assets/committees/SECRETARY GENERAL AND DEPUTY/Deputy Secretary General-Yoela Zelda.png"
+      image: "assets/committees/SECRETARY GENERAL AND DEPUTY/Deputy_Secretary_General-Yoela_Zelda.png"
     }
   ],
   departments: [
     {
       title: "Administration and Legality",
-      usg: { name: "Ghaitza Diamanta", image: "assets/committees/ADMINISTRATION/Administration (USG)-Ghaitza Diamanta.png" },
-      ausg: { name: "Rossi Amalia", image: "assets/committees/ADMINISTRATION/Administration (AUSG)-Amalia Rossi Hakiki.png" },
+      usg: { name: "Ghaitza Diamanta", image: "assets/committees/ADMINISTRATION/Administration-(USG)-Ghaitza_Diamanta.png" },
+      ausg: { name: "Rossi Amalia", image: "assets/committees/ADMINISTRATION/Administration-(AUSG)-Amalia_Rossi_Hakiki.png" },
       members: [
-        { name: "Zhafran Shahzada", image: "assets/committees/ADMINISTRATION/Administration-Zhafran Shahzada.png" },
-        { name: "Emeralda Maurenzia", image: "assets/committees/ADMINISTRATION/Administration-Emeralda Maurenzia.png" },
-        { name: "Gina Keris Anastasia Ewi", image: "assets/committees/ADMINISTRATION/Administration-Gina Keris Anastasia Ewi.png" },
-        { name: "Mawlida Rizka Kamila", image: "assets/committees/ADMINISTRATION/Administration-Mawlida Rizka Kamila.png" }
+        { name: "Zhafran Shahzada", image: "assets/committees/ADMINISTRATION/Administration-Zhafran_Shahzada.png" },
+        { name: "Emeralda Maurenzia", image: "assets/committees/ADMINISTRATION/Administration-Emeralda_Maurenzia.png" },
+        { name: "Gina Keris Anastasia Ewi", image: "assets/committees/ADMINISTRATION/Administration-Gina_Keris_Anastasia_Ewi.png" },
+        { name: "Mawlida Rizka Kamila", image: "assets/committees/ADMINISTRATION/Administration-Mawlida_Rizka_Kamila.png" }
       ]
     },
     {
       title: "Finance",
-      usg: { name: "Gabriella Rindang Dewi Arimbi", image: "assets/committees/FINANCE/Finance (USG)-Gabriela Rindang Dewi Arimbi.png" },
-      ausg: { name: "Grandiessa", image: "assets/committees/FINANCE/Finance (AUSG)-Grandiessa Najla Khalila.png" },
+      usg: { name: "Gabriella Rindang Dewi Arimbi", image: "assets/committees/FINANCE/Finance-(USG)-Gabriela_Rindang_Dewi_Arimbi.png" },
+      ausg: { name: "Grandiessa", image: "assets/committees/FINANCE/Finance-(AUSG)-Grandiessa_Najla_Khalila.png" },
       members: [
-        { name: "Eileen Daneaya", image: "assets/committees/FINANCE/Finance-Eileen Daneaya.png" },
-        { name: "Eky Joana Alayda Ismaya", image: "assets/committees/FINANCE/Finance-Eky Joana Alayda Ismaya.png" },
-        { name: "Ineza Sativa Batara", image: "assets/committees/FINANCE/Finance-Ineza Sativa Batara.png" },
+        { name: "Eileen Daneaya", image: "assets/committees/FINANCE/Finance-Eileen_Daneaya.png" },
+        { name: "Eky Joana Alayda Ismaya", image: "assets/committees/FINANCE/Finance-Eky_Joana_Alayda_Ismaya.png" },
+        { name: "Ineza Sativa Batara", image: "assets/committees/FINANCE/Finance-Ineza_Sativa_Batara.png" },
         { name: "Raymond", image: "assets/committees/FINANCE/Finance-Raymond.png" },
-        { name: "Valerion Theodore Chandratama", image: "assets/committees/FINANCE/FINANCE-VALERION THEODORE CHANDRATAMA.png" },
-        { name: "Zaskiatul Ulya", image: "assets/committees/FINANCE/Finance-Zaskiatul Ulya.png" }
+        { name: "Valerion Theodore Chandratama", image: "assets/committees/FINANCE/FINANCE-VALERION_THEODORE_CHANDRATAMA.png" },
+        { name: "Zaskiatul Ulya", image: "assets/committees/FINANCE/Finance-Zaskiatul_Ulya.png" }
       ]
     },
     {
       title: "Substance",
-      usg: { name: "Brain Raska Sembiring", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-USG)-Brain Raska Sembiring.png" },
-      ausg: { name: "Vanessa Manuela Patty", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance (AUSG)-Vanessa Manuela Patty.png" },
+      usg: { name: "Brain Raska Sembiring", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-(USG)-Brain_Raska_Sembiring.png" },
+      ausg: { name: "Vanessa Manuela Patty", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-(AUSG)-Vanessa_Manuela_Patty.png" },
       members: [
-        { name: "Arrum Kania Faizah Az-Zahra", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Arrum Kania Faizah Az-Zahra.png" },
-        { name: "Faiz Orlando Amryanto Pidani", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Faiz Orlando Amryanto Pidani.png" },
-        { name: "Rafi Dwiputra Daniswara", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Rafi Dwiputra Daniswara.png" },
-        { name: "Fasha Yoga Prasetya", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Fasha Yoga Prasetya.png" },
-        { name: "Zanaya Mauranisa", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Zanaya Mauranisa.png" },
-        { name: "Olivia Victoria Thenu", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Olivia Victoria Thenu.png" },
-        { name: "Vima Syaddad Alfathan", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Vima Syaddad Alfathan.png" },
-        { name: "Jedda Muncar RR", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Jedda Muncar RR.png" },
-        { name: "Daffa Dwika Fadiya Hidayat", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Daffa Dwika Fadiya Hidayat.png" }
+        { name: "Arrum Kania Faizah Az-Zahra", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Arrum_Kania_Faizah_Az-Zahra.png" },
+        { name: "Faiz Orlando Amryanto Pidani", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Faiz_Orlando_Amryanto_Pidani.png" },
+        { name: "Rafi Dwiputra Daniswara", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Rafi_Dwiputra_Daniswara.png" },
+        { name: "Fasha Yoga Prasetya", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Fasha_Yoga_Prasetya.png" },
+        { name: "Zanaya Mauranisa", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Zanaya_Mauranisa.png" },
+        { name: "Olivia Victoria Thenu", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Olivia_Victoria_Thenu.png" },
+        { name: "Vima Syaddad Alfathan", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Vima_Syaddad_Alfathan.png" },
+        { name: "Jedda Muncar RR", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Jedda_Muncar_RR.png" },
+        { name: "Daffa Dwika Fadiya Hidayat", image: "assets/committees/SUBSTANCE (ACADEMIC)/Substance-Daffa_Dwika_Fadiya_Hidayat.png" }
       ]
     },
     {
       title: "Conference",
-      usg: { name: "Salwa Nurunnadia Laoh", image: "assets/committees/Conference/Conference (USG)-Salwa Nurunnadia Laoh.png" },
-      ausg: { name: "Bella Adilla", image: "assets/committees/Conference/Conference (AUSG) Bela Adila.png" },
+      usg: { name: "Salwa Nurunnadia Laoh", image: "assets/committees/Conference/Conference-(USG)-Salwa_Nurunnadia_Laoh.png" },
+      ausg: { name: "Bella Adilla", image: "assets/committees/Conference/Conference-(AUSG)-Bela_Adila.png" },
       members: [
-        { name: "Chandra Aden Akbar Pamungkas", image: "assets/committees/Conference/Conference-Chandra Aden Akbar Pamungkas.png" },
-        { name: "Haura Zauziha Az-Zahra", image: "assets/committees/Conference/Conference-Haura Zauziha Az-Zahra (tio).png" },
-        { name: "Muhammad Khairatul", image: "assets/committees/Conference/Conference-Muhammad Khairatul.png" },
-        { name: "Athira Zahra", image: "assets/committees/Conference/Conference-Athira Zahra.png" },
-        { name: "Ranya Kayla Bilqisthi", image: "assets/committees/Conference/Conference-Ranya Kayla Bilqisthi.png" },
-        { name: "Pandu Anurullah", image: "assets/committees/Conference/Conference-Pandu Anurullah.png" },
-        { name: "Avelife Maria Easter Saroinsong", image: "assets/committees/Conference/Conference-Avelife Maria Easter Saroinsong.png" },
-        { name: "Farica Adnan Ramadhani", image: "assets/committees/Conference/Conference-Farica Adnan Ramadhani.png" },
-        { name: "Sherly Natania Hadi", image: "assets/committees/Conference/Conference-Sherly Natania Hadi.png" },
-        { name: "Rizky Aulia Putri", image: "assets/committees/Conference/Conference-Rizky Aulia Putri.png" },
-        { name: "Muhammad Raffi Ramdhan", image: "assets/committees/Conference/Conference-Muhammad Raffi Ramdhan.png" },
-        { name: "Gio Algifari", image: "assets/committees/Conference/Conference-Gio Algifari.png" },
-        { name: "Zaidan Mahfudz Azzam Saidi", image: "assets/committees/Conference/Conference-Zaidan Mahfudz Azzam Saidi.png" },
-        { name: "Cut Putri Alya Vanissa", image: "assets/committees/Conference/Conference-Cut Putri Alya Vanissa.png" },
-        { name: "Nadia Aulia Azzera", image: "assets/committees/Conference/Conference-Nadia Aulia Azzera.png" },
-        { name: "Muflyhah Wilda Az-Zahra", image: "assets/committees/Conference/Conference-Muflyhah Wilda Az-Zahra.png" },
-        { name: "Meutia Putri Sayzaman", image: "assets/committees/Conference/Conference-Meutia Putri Sayzaman.png" },
-        { name: "Delia Sari", image: "assets/committees/Conference/Conference-Delia Sari.png" },
-        { name: "Elisa Maisarah", image: "assets/committees/Conference/Conference-Elisa Maisarah.png" }
+        { name: "Chandra Aden Akbar Pamungkas", image: "assets/committees/Conference/Conference-Chandra_Aden_Akbar_Pamungkas.png" },
+        { name: "Haura Zauziha Az-Zahra", image: "assets/committees/Conference/Conference-Haura_Zauziha_Az-Zahra_(tio).png" },
+        { name: "Muhammad Khairatul", image: "assets/committees/Conference/Conference-Muhammad_Khairatul.png" },
+        { name: "Athira Zahra", image: "assets/committees/Conference/Conference-Athira_Zahra.png" },
+        { name: "Ranya Kayla Bilqisthi", image: "assets/committees/Conference/Conference-Ranya_Kayla_Bilqisthi.png" },
+        { name: "Pandu Anurullah", image: "assets/committees/Conference/Conference-Pandu_Anurullah.png" },
+        { name: "Avelife Maria Easter Saroinsong", image: "assets/committees/Conference/Conference-Avelife_Maria_Easter_Saroinsong.png" },
+        { name: "Farica Adnan Ramadhani", image: "assets/committees/Conference/Conference-Farica_Adnan_Ramadhani.png" },
+        { name: "Sherly Natania Hadi", image: "assets/committees/Conference/Conference-Sherly_Natania_Hadi.png" },
+        { name: "Rizky Aulia Putri", image: "assets/committees/Conference/Conference-Rizky_Aulia_Putri.png" },
+        { name: "Muhammad Raffi Ramdhan", image: "assets/committees/Conference/Conference-Muhammad_Raffi_Ramdhan.png" },
+        { name: "Gio Algifari", image: "assets/committees/Conference/Conference-Gio_Algifari.png" },
+        { name: "Zaidan Mahfudz Azzam Saidi", image: "assets/committees/Conference/Conference-Zaidan_Mahfudz_Azzam_Saidi.png" },
+        { name: "Cut Putri Alya Vanissa", image: "assets/committees/Conference/Conference-Cut_Putri_Alya_Vanissa.png" },
+        { name: "Nadia Aulia Azzera", image: "assets/committees/Conference/Conference-Nadia_Aulia_Azzera.png" },
+        { name: "Muflyhah Wilda Az-Zahra", image: "assets/committees/Conference/Conference-Muflyhah_Wilda_Az-Zahra.png" },
+        { name: "Meutia Putri Sayzaman", image: "assets/committees/Conference/Conference-Meutia_Putri_Sayzaman.png" },
+        { name: "Delia Sari", image: "assets/committees/Conference/Conference-Delia_Sari.png" },
+        { name: "Elisa Maisarah", image: "assets/committees/Conference/Conference-Elisa_Maisarah.png" }
       ]
     },
     {
       title: "Internal Affairs",
-      usg: { name: "Mutiara Anindya Abidin", image: "assets/committees/INTERNAL/Internal (USG)-Mutiara Anindya.png" },
-      ausg: { name: "Maureene Aqilla Ferdian", image: "assets/committees/INTERNAL/Internal (AUSG)-Maureene Aqilla.png" },
+      usg: { name: "Mutiara Anindya Abidin", image: "assets/committees/INTERNAL/Internal-(USG)-Mutiara_Anindya.png" },
+      ausg: { name: "Maureene Aqilla Ferdian", image: "assets/committees/INTERNAL/Internal-(AUSG)-Maureene_Aqilla.png" },
       members: [
-        { name: "Alfendo Rahmadani Aryo Prakoso", image: "assets/committees/INTERNAL/Internal (Delegate Affairs)-Alfendo Rahmadani Aryo Prakoso.png" },
-        { name: "Annisa Nur Rahmi", image: "assets/committees/INTERNAL/Internal (PR)-Annisa Nur Rahmi.png" },
-        { name: "Aqela Firyal Zahira", image: "assets/committees/INTERNAL/Internal (DA)-Aqela Firyal Zahira.png" },
-        { name: "Claudia Meta Tasya Cikita", image: "assets/committees/INTERNAL/Internal (PR)-Claudia Meta T. Cikita.png" },
-        { name: "Fathya Rizky Rania Mandai", image: "assets/committees/INTERNAL/Internal (Public Relation)-Fathya Rizky Rania Mandai.png" },
-        { name: "Hazel Jocelyn Tiurma Riva Sitorus", image: "assets/committees/INTERNAL/Internal (DA)-Hazel Jocelyn Tiurma Riva Sitorus.png" },
-        { name: "Nadia Adelia Nasution", image: "assets/committees/INTERNAL/Internal (DA)-Nadia Adelia Nasution.png" },
-        { name: "Rachel Elisabeth", image: "assets/committees/INTERNAL/Internal (DA)-⁠Rachel Elisabeth.png" },
-        { name: "Raisya Herlia Putranto", image: "assets/committees/INTERNAL/Internal (DA)-Raisya Herlia Putranto.png" },
-        { name: "Roxy Talitha Athallah", image: "assets/committees/INTERNAL/INternal (PR)-Roxy Talitha Athallah.png" },
-        { name: "Teressa Harimurti", image: "assets/committees/INTERNAL/Internal (PR)-Teressa Harimurti.png" }
+        { name: "Alfendo Rahmadani Aryo Prakoso", image: "assets/committees/INTERNAL/Internal-(Delegate-Affairs)-Alfendo_Rahmadani_Aryo_Prakoso.png" },
+        { name: "Annisa Nur Rahmi", image: "assets/committees/INTERNAL/Internal-(PR)-Annisa_Nur_Rahmi.png" },
+        { name: "Aqela Firyal Zahira", image: "assets/committees/INTERNAL/Internal-(DA)-Aqela_Firyal_Zahira.png" },
+        { name: "Claudia Meta Tasya Cikita", image: "assets/committees/INTERNAL/Internal-(PR)-Claudia_Meta_T._Cikita.png" },
+        { name: "Fathya Rizky Rania Mandai", image: "assets/committees/INTERNAL/Internal-(Public-Relation)-Fathya_Rizky_Rania_Mandai.png" },
+        { name: "Hazel Jocelyn Tiurma Riva Sitorus", image: "assets/committees/INTERNAL/Internal-(DA)-Hazel_Jocelyn_Tiurma_Riva_Sitorus.png" },
+        { name: "Nadia Adelia Nasution", image: "assets/committees/INTERNAL/Internal-(DA)-Nadia_Adelia_Nasution.png" },
+        { name: "Rachel Elisabeth", image: "assets/committees/INTERNAL/Internal-(DA)-⁠Rachel_Elisabeth.png" },
+        { name: "Raisya Herlia Putranto", image: "assets/committees/INTERNAL/Internal-(DA)-Raisya_Herlia_Putranto.png" },
+        { name: "Roxy Talitha Athallah", image: "assets/committees/INTERNAL/INternal-(PR)-Roxy_Talitha_Athallah.png" },
+        { name: "Teressa Harimurti", image: "assets/committees/INTERNAL/Internal-(PR)-Teressa_Harimurti.png" }
       ]
     },
     {
       title: "External Affairs",
-      usg: { name: "Nadine Chandrawinata Wenas", image: "assets/committees/EXTERNAL/External (USG)-Nadine Chandrawinata Wenas.png" },
-      ausg: { name: "Aulia Dwi", image: "assets/committees/EXTERNAL/External (AUSG)-Aulia Dwi Nurhayyu.png" },
+      usg: { name: "Nadine Chandrawinata Wenas", image: "assets/committees/EXTERNAL/External-(USG)-Nadine_Chandrawinata_Wenas.png" },
+      ausg: { name: "Aulia Dwi", image: "assets/committees/EXTERNAL/External-(AUSG)-Aulia_Dwi_Nurhayyu.png" },
       members: [
-        { name: "Akna Khoirun Nisa", image: "assets/committees/EXTERNAL/External (Liaison Officer)-Akna Khoirun Nisa.png" },
-        { name: "Nur Azizah Iqrimah Siregar", image: "assets/committees/EXTERNAL/External (Sponsorship)-Nur Azizah Iqrimah Siregar.png" },
-        { name: "Nagita Alifia Kusuma Salsabilla", image: "assets/committees/EXTERNAL/External (MedPar)-Nagita Alifia Kusuma Salsabilla.png" },
-        { name: "Ramya Syazwina Zulcham", image: "assets/committees/EXTERNAL/External (Liaisonn Officer)-Ramya Syazwina Zulcham.png" },
-        { name: "Fikri Aji", image: "assets/committees/EXTERNAL/External (Liaison Officer)-Fikri Aji.png" },
-        { name: "Eleonora Joycelyne", image: "assets/committees/EXTERNAL/External (sponsorship)-Eleonora Joycelyne.png" },
-        { name: "Thomas William P", image: "assets/committees/EXTERNAL/External (Sponsor)-Thomas William P.png" },
-        { name: "Dyna Syarifa", image: "assets/committees/EXTERNAL/External (Liaison Officer)-Dyna Syarifa.png" },
-        { name: "Jihan Hamdalah", image: "assets/committees/EXTERNAL/External (LO)-Jihan Hamdalah.png" }
+        { name: "Akna Khoirun Nisa", image: "assets/committees/EXTERNAL/External-(Liaison-Officer)-Akna_Khoirun_Nisa.png" },
+        { name: "Nur Azizah Iqrimah Siregar", image: "assets/committees/EXTERNAL/External-(Sponsorship)-Nur_Azizah_Iqrimah_Siregar.png" },
+        { name: "Nagita Alifia Kusuma Salsabilla", image: "assets/committees/EXTERNAL/External-(MedPar)-Nagita_Alifia_Kusuma_Salsabilla.png" },
+        { name: "Ramya Syazwina Zulcham", image: "assets/committees/EXTERNAL/External-(Liaisonn-Officer)-Ramya_Syazwina_Zulcham.png" },
+        { name: "Fikri Aji", image: "assets/committees/EXTERNAL/External-(Liaison-Officer)-Fikri_Aji.png" },
+        { name: "Eleonora Joycelyne", image: "assets/committees/EXTERNAL/External-(sponsorship)-Eleonora_Joycelyne.png" },
+        { name: "Thomas William P", image: "assets/committees/EXTERNAL/External-(Sponsor)-Thomas_William_P.png" },
+        { name: "Dyna Syarifa", image: "assets/committees/EXTERNAL/External-(Liaison-Officer)-Dyna_Syarifa.png" },
+        { name: "Jihan Hamdalah", image: "assets/committees/EXTERNAL/External-(LO)-Jihan_Hamdalah.png" }
       ]
     },
     {
       title: "Multimedia, Design, and Documentation (MTDD)",
-      usg: { name: "Mifta Farid Masyuchrin", image: "assets/committees/MTDD/MTDD (USG)-Mifta Farid M.png" },
-      ausg: { name: "Siti Najmatul Mu'izzah Masruchin", image: "assets/committees/MTDD/MTDD (AUSG)-Siti Najmatul Mu_izzah Masruchin.png" },
+      usg: { name: "Mifta Farid Masyuchrin", image: "assets/committees/MTDD/MTDD-(USG)-Mifta_Farid_M.png" },
+      ausg: { name: "Siti Najmatul Mu'izzah Masruchin", image: "assets/committees/MTDD/MTDD-(AUSG)-Siti_Najmatul_Mu_izzah_Masruchin.png" },
       members: [
-        { name: "Jemima Grace Marcella Paserang", image: "assets/committees/MTDD/MTDD-Jemima Grace Marcella Paserang.png" },
-        { name: "Sadrina Azzahra Alhabsyi", image: "assets/committees/MTDD/MTDD-Sadrina Azzahra Alhabsyi.png" },
-        { name: "Nyayu Nur Amalia Yahya", image: "assets/committees/MTDD/MTDD-Nyayu Nur Amalia Yahya.png" },
-        { name: "Zefanya Febe Putranti", image: "assets/committees/MTDD/MTDD-Zefanya Febe Putranti.png" },
-        { name: "Taqya Aulia Herdiyana", image: "assets/committees/MTDD/MTDD-Taqya Aulia Herdiyana.png" },
-        { name: "Anvil Salsabila", image: "assets/committees/MTDD/MTDD-Anvil Salsabila.png" },
-        { name: "Putri Amaliah Miftahuljannah", image: "assets/committees/MTDD/MTDD-Putri Amaliah Miftahuljannah.png" },
+        { name: "Jemima Grace Marcella Paserang", image: "assets/committees/MTDD/MTDD-Jemima_Grace_Marcella_Paserang.png" },
+        { name: "Sadrina Azzahra Alhabsyi", image: "assets/committees/MTDD/MTDD-Sadrina_Azzahra_Alhabsyi.png" },
+        { name: "Nyayu Nur Amalia Yahya", image: "assets/committees/MTDD/MTDD-Nyayu_Nur_Amalia_Yahya.png" },
+        { name: "Zefanya Febe Putranti", image: "assets/committees/MTDD/MTDD-Zefanya_Febe_Putranti.png" },
+        { name: "Taqya Aulia Herdiyana", image: "assets/committees/MTDD/MTDD-Taqya_Aulia_Herdiyana.png" },
+        { name: "Anvil Salsabila", image: "assets/committees/MTDD/MTDD-Anvil_Salsabila.png" },
+        { name: "Putri Amaliah Miftahuljannah", image: "assets/committees/MTDD/MTDD-Putri_Amaliah_Miftahuljannah.png" },
         { name: "Farhan", image: "assets/committees/MTDD/MTDD-Farhan.png" },
-        { name: "Antonius Bagus Prasetio", image: "assets/committees/MTDD/MTDD-Antonius Bagus Prasetio.png" }
+        { name: "Antonius Bagus Prasetio", image: "assets/committees/MTDD/MTDD-Antonius_Bagus_Prasetio.png" }
       ]
     },
     {
       title: "Data Master",
-      usg: { name: "Shakiva Naswa Crescensia", image: "assets/committees/DATA MASTER/Data Master (USG)-Shakiva Naswa Crescensia.png" },
-      ausg: { name: "Muhammad Yusuf Firizki", image: "assets/committees/DATA MASTER/Data Master (AUSG)-Muhammad Yusuf Firizki.png" },
+      usg: { name: "Shakiva Naswa Crescensia", image: "assets/committees/DATA MASTER/Data_Master-(USG)-Shakiva_Naswa_Crescensia.png" },
+      ausg: { name: "Muhammad Yusuf Firizki", image: "assets/committees/DATA MASTER/Data_Master-(AUSG)-Muhammad_Yusuf_Firizki.png" },
       members: [
-        { name: "Alden Sayidina Radjab", image: "assets/committees/DATA MASTER/Data Master-Alden Sayidina Radjab.png" },
-        { name: "Samuel Jagar Adoman Manalu", image: "assets/committees/DATA MASTER/Data Master-Samuel Jagar Adoman Manalu.png" }
+        { name: "Alden Sayidina Radjab", image: "assets/committees/DATA MASTER/Data_Master-Alden_Sayidina_Radjab.png" },
+        { name: "Samuel Jagar Adoman Manalu", image: "assets/committees/DATA MASTER/Data_Master-Samuel_Jagar_Adoman_Manalu.png" }
       ]
     },
     {
       title: "Marketing",
-      usg: { name: "Beby Joya", image: "assets/committees/MARKETING/Marketing (USG)-Beby Joya.png" },
-      ausg: { name: "Akifah Nur Fadhillah", image: "assets/committees/MARKETING/Marketing (AUSG)-Akifah Nur Fadhilah.png" },
+      usg: { name: "Beby Joya", image: "assets/committees/MARKETING/Marketing-(USG)-Beby_Joya.png" },
+      ausg: { name: "Akifah Nur Fadhillah", image: "assets/committees/MARKETING/Marketing-(AUSG)-Akifah_Nur_Fadhilah.png" },
       members: [
-        { name: "Bestari Ashhabal Jannati", image: "assets/committees/MARKETING/Marketing-Bestari Ashhabal Jannati.png" },
-        { name: "Dellinda Christiani Karongkong", image: "assets/committees/MARKETING/Marketing-Dellinda Christiani Karongkong.png" },
-        { name: "Nailah Azmi", image: "assets/committees/MARKETING/Marketing-⁠Nailah Azmi.png" },
+        { name: "Bestari Ashhabal Jannati", image: "assets/committees/MARKETING/Marketing-Bestari_Ashhabal_Jannati.png" },
+        { name: "Dellinda Christiani Karongkong", image: "assets/committees/MARKETING/Marketing-Dellinda_Christiani_Karongkong.png" },
+        { name: "Nailah Azmi", image: "assets/committees/MARKETING/Marketing-⁠Nailah_Azmi.png" },
         { name: "Katrina", image: "assets/committees/MARKETING/Marketing-Katrina.png" },
-        { name: "Nasyeila Nayla", image: "assets/committees/MARKETING/Marketing-Nasyeila Nayla.png" },
-        { name: "Aurellia Hillary", image: "assets/committees/MARKETING/Marketing-Aurellia Kate Hillary .png" },
-        { name: "Lulu Juwita", image: "assets/committees/MARKETING/Marketing-Lulu Juwita.png" }
+        { name: "Nasyeila Nayla", image: "assets/committees/MARKETING/Marketing-Nasyeila_Nayla.png" },
+        { name: "Aurellia Hillary", image: "assets/committees/MARKETING/Marketing-Aurellia_Kate_Hillary.png" },
+        { name: "Lulu Juwita", image: "assets/committees/MARKETING/Marketing-Lulu_Juwita.png" }
       ]
     },
     {
       title: "Entrepreneurship",
-      usg: { name: "Alfeiza Ghenaya Rizqi", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur (USG)-Alfeiza G.png" },
-      ausg: { name: "Ardel Davin", image: "assets/committees/ENTREPRENEURSHIP/Entre (AUSG)-Ardel Davin.png" },
+      usg: { name: "Alfeiza Ghenaya Rizqi", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-(USG)-Alfeiza_G.png" },
+      ausg: { name: "Ardel Davin", image: "assets/committees/ENTREPRENEURSHIP/Entre-(AUSG)-Ardel_Davin.png" },
       members: [
-        { name: "Khairun Najwa Ambrollah", image: "assets/committees/ENTREPRENEURSHIP/Entre-Khairun Najwa Ambrollah.png" },
-        { name: "Zahwa Rindu Setianka", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneurship-Zahwa Rindu Setianka.png" },
-        { name: "Firdha Natasya", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Firdha Natasya.png" },
-        { name: "Yobel Felixio Sempurna", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Yobel Felixio Sempurna.png" },
-        { name: "M. Farhan", image: "assets/committees/ENTREPRENEURSHIP/Enterpreneur-M. Farhan.png" },
-        { name: "Azura Balqissyah Zahra", image: "assets/committees/ENTREPRENEURSHIP/Entre-Azura Balqissyah Zahra.png" },
-        { name: "Arjuando Tampubolon", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Arjuando Tampubolon.png" }
+        { name: "Khairun Najwa Ambrollah", image: "assets/committees/ENTREPRENEURSHIP/Entre-Khairun_Najwa_Ambrollah.png" },
+        { name: "Zahwa Rindu Setianka", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneurship-Zahwa_Rindu_Setianka.png" },
+        { name: "Firdha Natasya", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Firdha_Natasya.png" },
+        { name: "Yobel Felixio Sempurna", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Yobel_Felixio_Sempurna.png" },
+        { name: "M. Farhan", image: "assets/committees/ENTREPRENEURSHIP/Enterpreneur-M._Farhan.png" },
+        { name: "Azura Balqissyah Zahra", image: "assets/committees/ENTREPRENEURSHIP/Entre-Azura_Balqissyah_Zahra.png" },
+        { name: "Arjuando Tampubolon", image: "assets/committees/ENTREPRENEURSHIP/Entrepreneur-Arjuando_Tampubolon.png" }
       ]
     },
     {
       title: "Food and Beverage",
-      usg: { name: "Jelita Nazhifah", image: "assets/committees/FOOD AND BEVERAGE/FnB (USG)-Jelita Nazhifah Dyren.png" },
+      usg: { name: "Jelita Nazhifah", image: "assets/committees/FOOD AND BEVERAGE/FnB-(USG)-Jelita_Nazhifah_Dyren.png" },
       ausg: { name: "", image: "" },
       members: [
-        { name: "Jelita Rotua Sitanggang", image: "assets/committees/FOOD AND BEVERAGE/FnB-Jelita Rotua Sitanggang.png" },
-        { name: "Bianca Jillian Kimberly", image: "assets/committees/FOOD AND BEVERAGE/FnB-Bianca Jillian Kimberly.png" },
-        { name: "Davin Deannova", image: "assets/committees/FOOD AND BEVERAGE/FnB-Davin Deannova.png" },
-        { name: "Nadzma Salzabilla", image: "assets/committees/FOOD AND BEVERAGE/FnB-Nadzma Salzabilla.png" },
-        { name: "Graciella Bernadette", image: "assets/committees/FOOD AND BEVERAGE/FnB-Graciella Bernadette.png" }
+        { name: "Jelita Rotua Sitanggang", image: "assets/committees/FOOD AND BEVERAGE/FnB-Jelita_Rotua_Sitanggang.png" },
+        { name: "Bianca Jillian Kimberly", image: "assets/committees/FOOD AND BEVERAGE/FnB-Bianca_Jillian_Kimberly.png" },
+        { name: "Davin Deannova", image: "assets/committees/FOOD AND BEVERAGE/FnB-Davin_Deannova.png" },
+        { name: "Nadzma Salzabilla", image: "assets/committees/FOOD AND BEVERAGE/FnB-Nadzma_Salzabilla.png" },
+        { name: "Graciella Bernadette", image: "assets/committees/FOOD AND BEVERAGE/FnB-Graciella_Bernadette.png" }
       ]
     }
   ]
