@@ -55,8 +55,8 @@ export default function Home() {
   const sponsors = [
     { id: 1, img: "/assets/sponsor/GLOBY_HALF_INITIALS_BLUE.png", alt: "GLOBY" },
     { id: 2, img: "/assets/sponsor/Logo_HTku_Jpg.JPG", alt: "HTKU" },
-    { id: 3, img: "/assets/sponsor/Movics_Photography_Indonesia.jpg", alt: "Movies Photo & Videography Indonesia" },
-    { id: 4, img: "/assets/sponsor/Movics_Photography_Indonesia.jpg", alt: "Oh My Skin!" },
+    { id: 3, img: "/assets/sponsor/Logo_oms_PNG_No_shadow.PNG", alt: "Oh My Skin" },
+    { id: 4, img: "/assets/sponsor/Movics_Photography_Indonesia.jpg", alt: "Movics Photography Indonesia" },
   ];
 
   const mediaPartners = [
