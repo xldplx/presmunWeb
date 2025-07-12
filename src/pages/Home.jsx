@@ -57,6 +57,7 @@ export default function Home() {
     { id: 2, img: "/assets/sponsor/Logo_HTku_Jpg.JPG", alt: "HTKU" },
     { id: 3, img: "/assets/sponsor/Logo_oms_PNG_No_shadow.PNG", alt: "Oh My Skin" },
     { id: 4, img: "/assets/sponsor/Movics_Photography_Indonesia.jpg", alt: "Movics Photography Indonesia" },
+    { id: 5, img: "/assets/sponsor/Logo.png", alt: "logo" },
   ];
 
   const mediaPartners = [
