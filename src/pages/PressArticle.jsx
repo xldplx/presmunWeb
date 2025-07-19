@@ -184,6 +184,181 @@ The second moderated caucus lead into a more comprehensive discussion, such as t
 
 "It's pretty difficult to work alongside USA with different economy strategies.", China answered when asked about the possibility of collaboration with USA during an interview.`
     },
+    {
+      id: 7,
+      title: "Indonesia’s Climate Crisis: High Risk, Low Support",
+      author: "Renata Bahaswar",
+      date: "July 19, 2025",
+      readTime: "3 min read",
+      excerpt: "How technology transformed traditional Model UN into a hybrid experience that bridges physical and virtual diplomatic engagement.",
+      content: `Indonesia as a country with thousands of islands, mangroves, and rainforests, is in the forefront of
+ecological danger as the climate crisis worsens. Climate action is urgently needed because of the
+threat that rising sea levels pose to its coastal people and the loss of biodiversity in its most
+abundant ecosystems.
+
+However, despite many promises of billions in climate money from international forums, aid to
+weaker developing countries like Indonesia continues to be delayed, unequal, and frequently
+linked to complex circumstances. This begs the important question of whether global climate
+finance systems are indeed intended to assist those in greatest need or if they are instead serving
+to exacerbate the very disparities that the climate movement aims to address.
+
+Although billions of dollars in climate finance are frequently promised at international meetings,
+the real flow of money to nations like Indonesia is still small. Despite playing a crucial role in
+biodiversity and global carbon storage, Indonesia has difficulty getting timely and equitable
+support. According to recent interview with the delegate of Indonesia, When it comes to how
+accessible climate finance is for Indonesia, the answer is only partially accessible.
+
+It is true that Indonesia has received some funding, such as the Green Climate Fund for some
+projects like REDD+ results-based payments in 2019 where Indonesia received 103.8 million USD
+for reducing emissions from deforestation. Indonesia also received a lot of aid such as the Forest
+Carbon Partnership Facility (FCPF) from the World Bank, UN-REDD, Norway's NICFI, and
+bilateral agreements with Germany, Japan, and others.
+
+Despite they have received the financial aid, it is not enough. For example, FOLU Net Sink
+program 2023, one of the main features of which is to address the Jakarta Sinking problem, the
+funding needs are around 204 trillion Rupiah (13 Billion USD), but the Indonesian government
+funding for the 2020-2024 time period is only around 19.6 trillion, far from the funding needs.
+Although Indonesia has received 1 Trillion from Norway under the Results-Based Contribution
+(RBC-5), the gap between the required funds and the existing funds is still very large.
+
+Indonesia is among the 35 countries most vulnerable to climate change, with major risks from
+rising sea levels, extreme weather and biodiversity loss. Yet so far, Indonesia has received various
+types of assistance, but the gap is still very large. It is estimated that Indonesia needs around 281
+billion USD to implement its declared NDC. However, current international contributions cover
+less than 20% of the need. The delegate said that distribution of climate fund is unfair. Many
+developing countries like Indonesia have pledged 100 billion USD per year by 2020, but have
+never met these targets in full or on time.`
+    },
+    {
+      id: 8,
+      title: "Modern Problems Need Modern Diplomacy: A Call to Change in the UNDP",
+      author: "Syihabudin Millah Wadin",
+      date: "July 19, 2025",
+      readTime: "3 min read",
+      excerpt: "How technology transformed traditional Model UN into a hybrid experience that bridges physical and virtual diplomatic engagement.",
+      content: `UNDP: The world is facing big problems like gentrification and urban displacement. These are
+not new issues, but the way we solve them often feels old and slow. In the recent UNDP session,
+it became clear that we need something more than just reports and long debates.
+
+One of the main problems discussed in the council was about money. The United States said UNDP
+projects cost too much and asked for clear plans. Other countries tried to balance between
+economic growth and social equality. But the conversation started to feel stuck, until Norway
+changed everything.
+
+In a surprising moment, the delegate of Norway stood up, tore a piece of paper, and said, “Our
+time is limited and we need fast solutions.” Then they gave a bold idea: creating something called
+“UN POPS” a modern platform to raise money and support from the youth. Norway ended the
+speech by saying, “Modern problem, modern solution,” while hitting the table.
+
+This strong move was supported by Tunisia, showing that some countries are ready to try new
+ideas. Instead of talking only about slow policies, they want fast action and creative thinking.
+
+Arab News believes that this moment shows something important: diplomacy needs to change. We
+are living in a fast world, but many diplomats still act too slow. Some countries like China or the
+ones who choose to stay quiet are missing the chance to lead. Saying nothing is not the same as
+being wise. Others countries such as U.S, Ireland, and more already shown they can lead with
+smart ideas, like Vision 2030 and big urban projects. So why not do the same in diplomacy? We at
+Arab News call for fresh solutions. Delegates must stop waiting and start acting. Let’s bring ideas
+that are new, exciting, and fast just like the world we live in today.`
+    },
+    {
+      id: 9,
+      title: "USA does not care about you, Netherlands’ ministry on killing spree",
+      author: "Maydicta Azzalya A.P.",
+      date: "July 19, 2025",
+      readTime: "3 min read",
+      excerpt: "How technology transformed traditional Model UN into a hybrid experience that bridges physical and virtual diplomatic engagement.",
+      content: `USA and China’s ‘conversation’ has sparked controversies across the council, especially during
+the unmoderated caucus. “We’re one great big country,”, USA stated during an interview, “we
+are twice of China’s GDP. That’s why everyone relies on us.”
+
+This scenario gives us the glimpse and the image of USA wanting to be the ‘one-and-only
+saviour’ for every member country. China stance, on the other hand, believes that USA’s
+delegate’s idea was ‘unrealistic’ and would be a struggle to achieve, due to every country having
+more than one problems, and none shares the same two.
+
+Netherlands agreed along with the Eastern, although both eventually split up into EU and G77
+member groups.
+
+During the crisis, two of three said countries were alleged with some controversial actions. USA
+exporting its waste to developing countries, and Netherlands, being naïve while also facing
+homicide allegations of some NGOs chairmen.
+
+USA strengthens its MAGA movement by transporting trash to other countries
+“We’re allocating our waste to developing countries so they can manage it, while we focus on
+other important matters.”, USA clarified.
+
+When asked for clarification during the press session, USA has shown their primordiality once
+again, by saying “no” when asked whether they care or not about the wellbeing of the countries
+they exported their waste to. No further clarification were added.
+
+Netherlands, on the other hand, stood up for their Prime Minister as if hiding the truth, or simply
+just ignorant. Saying, there has been no concrete proof nor validity of the accused file, as much
+as they’re just assumptions.
+
+China seemed subtly calm when two other delegates were fighting for the good sake of their
+country. The delegation clarifies, “Not in any way, for now.”, when demanded information
+regarding fostering a collaboration with USA, Netherlands, and other EU member countries.
+
+While China tried to regain everyone’s trust back in the G77 group, the member delegates bias’
+is unclear and remains unstable.`
+    },
+    {
+      id: 10,
+      title: "Urban Justice or Urban Diplomacy? The U.S. Exports a Model It Barely Practices",
+      author: "Wa Ode Nesha Rahmadinah",
+      date: "July 19, 2025",
+      readTime: "3 min read",
+      excerpt: "How technology transformed traditional Model UN into a hybrid experience that bridges physical and virtual diplomatic engagement.",
+      content: `The United States took the stage at the UNDP Council with compelling rhetoric, proposing a
+motion titled “The Impact of Gentrification on Minority Communities.” Their solution? The
+Community Land Trust (CLT) is a model designed to ensure community land ownership and
+resist displacement. The idea, promoted with confidence, was even offered to countries like
+Tunisia and Ethiopia as a scalable solution for inclusive urban development. Moreover,
+countries like Norway and Japan are also open to this. But behind the façade of progressive
+diplomacy lies a disturbing contradiction.
+
+In its cities, the U.S. continues to witness the unchecked displacement of Black, Latino, and
+Indigenous communities. Gentrification in urban centers like New York, San Francisco, and
+Washington, D.C. has become a symbol of systemic failure, not innovation. Community Land
+Trusts, though promising, remain scarce, underfunded, and politically sidelined. How can a
+nation export a model that hasn’t yet worked within its borders? This contradiction raises a
+deeper question: Is this genuine global solidarity, or another extension of urban
+neocolonialism under the flag of development?
+
+The U.S. narrative becomes even more complex when seen through the lens of city
+diplomacy and urban transnationalism. Cities are no longer passive arenas of development;
+they are actors. They now participate in international policymaking, shape global norms, and,
+increasingly, dictate what “progress” should look like in the Global South.
+
+But if urban diplomacy becomes a new mode of influence, who benefits?
+
+In this conference, Ethiopia has openly aligned itself with the U.S. stance. This may seem
+like a sign of South–North cooperation. But history urges caution. When dominant powers
+offer “solutions,” too often those come with conditions, whether explicit or implicit. Cities in
+the Global South may be asked to adopt Western models of development without the power
+to negotiate terms that fit their unique sociopolitical realities.
+
+The danger is clear: the Global South could once again become a testing ground for ideas
+not fully tested in the Global North. Tunisia, a country still healing from revolutionary
+transitions, may soon carry the burden of implementing a model that is not even common in
+the country proposing it. If the U.S. truly wants to lead on urban equity, it must begin by
+confronting its contradictions. Global leadership cannot be built on unfinished business at
+home. Progress begins not in the export of models, but in the humility to learn from one’s
+failures.
+
+A "Pop" Solution to a Structural Crisis?
+
+The U.S., along with Norway and Japan, unveiled a joint initiative to create a funding
+mechanism backed by what they called UNPOP — a musical and cultural platform aimed at
+engaging youth around issues of urban injustice. Norway delegates states that“Modern
+problems require modern solutions.”
+
+Engaging youth through culture is admirable. But music does not build affordable housing.
+Soundtracks don’t rewrite discriminatory zoning laws. And pop campaigns won’t secure land
+rights for informal settlers in Tunis or Addis Ababa. While cultural engagement is important,
+cultural diplomacy without structural investment is just rebranding, not reform.`
+    }
   ];
 
   const toggleArticle = (id) => {
