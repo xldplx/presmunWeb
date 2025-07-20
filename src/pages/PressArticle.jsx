@@ -77,11 +77,11 @@ export default function EnhancedPressArticles() {
           </div>
 
           {/* Footer */}
-          <div className="mt-20 flex items-center gap-4">
+          {/* <div className="mt-20 flex items-center gap-4">
             <div className="flex-1 h-px bg-gradient-to-r from-[#f3c623] to-transparent"></div>
             <FaNewspaper className="text-3xl text-[#f3c623]" />
             <div className="flex-1 h-px bg-gradient-to-l from-[#f3c623] to-transparent"></div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -93,7 +93,7 @@ export default function EnhancedPressArticles() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-0 sm:p-4"
             onClick={closeArticle}
           >
             <motion.div
@@ -101,16 +101,16 @@ export default function EnhancedPressArticles() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 50 }}
               transition={{ duration: 0.4, type: "spring" }}
-              className="bg-[#000420] border border-[#f3c623]/30 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden relative"
+              className="bg-[#000420] border border-[#f3c623]/30 rounded-none sm:rounded-2xl max-w-full sm:max-w-4xl w-full h-full sm:h-auto overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="bg-[#00072d] p-6 border-b border-[#f3c623]/20 relative">
-                <div className="pr-12">
-                  <h2 className="font-horizon text-2xl text-[#f3c623] mb-3 leading-tight">
+              <div className="bg-[#00072d] p-4 sm:p-6 border-b border-[#f3c623]/20 relative">
+                <div className="pr-10 sm:pr-12">
+                  <h2 className="font-horizon text-xl sm:text-2xl text-[#f3c623] mb-3 leading-tight">
                     {selectedArticle.title}
                   </h2>
-                  <div className="flex flex-wrap gap-4 text-sm text-white/60">
+                  <div className="flex flex-wrap gap-4 text-xs sm:text-sm text-white/60">
                     <span className="flex items-center gap-2">
                       <FaCalendarAlt /> {selectedArticle.date}
                     </span>
@@ -121,13 +121,13 @@ export default function EnhancedPressArticles() {
                 </div>
                 <button
                   onClick={closeArticle}
-                  className="absolute top-4 right-4 text-white/60 hover:text-[#f3c623] p-2 hover:bg-[#f3c623]/10 rounded-full transition-all duration-200 z-50"
+                  className="absolute top-3 right-3 sm:top-4 sm:right-4 text-white/60 hover:text-[#f3c623] p-2 hover:bg-[#f3c623]/10 rounded-full transition-all duration-200 z-50"
                 >
                   <FaTimes size={24} />
                 </button>
               </div>
 
-              <div className="p-6 overflow-y-auto max-h-[60vh]">
+              <div className="p-4 sm:p-6 overflow-y-auto h-[calc(100vh-120px)] sm:max-h-[60vh]">
                 <div className="prose prose-invert max-w-none">
                   {selectedArticle.content.split('\n\n').map((paragraph, pIndex) => {
                     const linkify = (text) => {
@@ -169,28 +169,6 @@ export default function EnhancedPressArticles() {
           </motion.div>
         )}
       </AnimatePresence>
-
-      <style jsx>{`
-        .line-clamp-2 {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        .line-clamp-3 {
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        @media (max-width: 640px) {
-          .relative .absolute {
-            top: 1rem;
-            right: 1rem;
-            padding: 0.5rem;
-          }
-        }
-      `}</style>
     </div>
   );
 }
