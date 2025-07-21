@@ -46,13 +46,13 @@ export default function EnhancedPressArticles() {
                 className="group cursor-pointer"
                 onClick={() => openArticle(article)}
               >
-                <div className="bg-[#00072d]/80 rounded-2xl p-6 h-full border border-[#f3c623]/20 hover:border-[#f3c623]/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#f3c623]/10">
+                <div className="relative bg-[#00072d]/80 rounded-2xl p-6 h-full border border-[#f3c623]/20 hover:border-[#f3c623]/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#f3c623]/10">
                   {/* Article Header */}
                   <div className="mb-4">
                     <h3 className="font-horizon text-lg text-[#f3c623] mb-3 leading-tight">
                       {article.title}
                     </h3>
-                    
+
                     {/* Meta Info */}
                     <div className="flex flex-wrap gap-2 text-xs text-white/60">
                       <span className="flex items-center gap-1">
@@ -65,7 +65,7 @@ export default function EnhancedPressArticles() {
                   </div>
 
                   {/* Read More Button */}
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-[#f3c623]/10">
+                  <div className="absolute left-0 bottom-0 w-full flex items-center justify-between pt-4 border-t border-[#f3c623]/10 px-6 pb-4">
                     <span className="text-[#f3c623] text-sm font-medium group-hover:text-[#ffe066] transition-colors">
                       Read Full Article
                     </span>
@@ -110,6 +110,12 @@ export default function EnhancedPressArticles() {
                   <h2 className="font-horizon text-xl sm:text-2xl text-[#f3c623] mb-3 leading-tight">
                     {selectedArticle.title}
                   </h2>
+                  {/* Excerpt */}
+                  {selectedArticle.excerpt && (
+                    <p className="text-white/80 font-montserrat text-base leading-relaxed italic mb-3">
+                      "{selectedArticle.excerpt}"
+                    </p>
+                  )}
                   <div className="flex flex-wrap gap-4 text-xs sm:text-sm text-white/60">
                     <span className="flex items-center gap-2">
                       <FaCalendarAlt /> {selectedArticle.date}
@@ -117,6 +123,9 @@ export default function EnhancedPressArticles() {
                     <span className="flex items-center gap-2">
                       <FaUser /> {selectedArticle.author}
                     </span>
+                    <div className="inline-block bg-[#f3c623]/10 px-3 py-1 rounded-full">
+                      <span className="text-[#f3c623]">{selectedArticle.text}</span>
+                    </div>
                   </div>
                 </div>
                 <button
@@ -150,7 +159,7 @@ export default function EnhancedPressArticles() {
                         return part;
                       });
                     };
-                    
+
                     return (
                       <motion.p
                         key={pIndex}
